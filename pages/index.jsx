@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import About from '../components/about';
-import Nav from '../components/Nav';
+import Nav from '../components/nav';
 
 export default function Home() {
 	return (
