@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import About from '../components/about';
+import Nav from '../components/Nav';
 
 export default function Home() {
 	return (
@@ -9,6 +10,7 @@ export default function Home() {
 				<title>Green Lawns Boarding Kennels</title>
 				<link rel='icon' href='/images/green-lawns-logo.png' />
 			</Head>
+			<Nav />
 			<main>
 				<div className='title-banner'>
 					<div className='titles'>
