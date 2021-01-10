@@ -2,6 +2,7 @@ import Head from 'next/head';
 import { useRef, useState, useLayoutEffect } from 'react';
 import useWindowSize from '../hooks/useWindowSize';
 import Nav from '../components/nav';
+import Footer from '../components/footer';
 
 export default function Contact() {
 	const [width, height] = useWindowSize();
@@ -118,6 +119,7 @@ export default function Contact() {
 					</div>
 				</section>
 			</main>
+			<Footer />
 		</>
 	);
 }

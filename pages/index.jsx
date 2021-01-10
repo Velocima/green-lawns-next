@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import About from '../components/about';
 import Nav from '../components/nav';
+import Footer from '../components/footer';
 
 export default function Home() {
 	return (
@@ -25,6 +26,7 @@ export default function Home() {
 				</div>
 				<About />
 			</main>
+			<Footer />
 		</>
 	);
 }

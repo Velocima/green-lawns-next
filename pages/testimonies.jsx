@@ -3,6 +3,7 @@ import Review from '../components/review';
 import { reviews } from '../infoJs/Reviews';
 import useWindowSize from '../hooks/useWindowSize';
 import Nav from '../components/nav';
+import Footer from '../components/footer';
 
 export default function Testimonials() {
 	const [width, height] = useWindowSize();
@@ -129,6 +130,7 @@ export default function Testimonials() {
 					))}
 				</div>
 			</main>
+			<Footer />
 		</>
 	);
 }
