@@ -1,0 +1,17 @@
+export const galleryImages = [
+	{ image: '/images/gallery/runnig.jpg', alt: '' },
+	{ image: '/images/gallery/also-running.jpg', alt: '' },
+	{ image: '/images/gallery/good-boy-ball.jpg', alt: '' },
+	{ image: '/images/gallery/good-boy-three.jpg', alt: '' },
+	{ image: '/images/gallery/good-boy-two.jpg', alt: '' },
+	{ image: '/images/gallery/hope-and-ted.jpg', alt: '' },
+	{ image: '/images/gallery/husky.jpg', alt: '' },
+	{ image: '/images/gallery/nani.jpg', alt: '' },
+	{ image: '/images/gallery/pair-of-good-boys.jpg', alt: '' },
+	{ image: './images/gallery/he-sits.jpg', alt: '' },
+	{ image: './images/gallery/stick.jpg', alt: '' },
+	{ image: './images/gallery/ted-1.jpg', alt: '' },
+	{ image: './images/gallery/thor.jpg', alt: '' },
+	{ image: './images/gallery/trio.jpg', alt: '' },
+	{ image: './images/gallery/barley.jpg', alt: '' },
+];
