@@ -119,6 +119,8 @@
 		z-index: 5000;
 		height: 40px;
 		width: 40px;
+		background-color: #ecfaf3d3;
+		border-radius: 5px;
 	}
 	.line {
 		background-color: #13614d;
