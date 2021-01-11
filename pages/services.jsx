@@ -3,6 +3,7 @@ import { useRef, useState, useLayoutEffect } from 'react';
 import useWindowSize from '../hooks/useWindowSize';
 import Nav from '../components/nav';
 import Footer from '../components/footer';
+import style from '../styles/services.module.css';
 
 export default function Services() {
 	const [width, height] = useWindowSize();
@@ -77,19 +78,19 @@ export default function Services() {
 				<link rel='icon' href='/images/green-lawns-logo.png' />
 			</Head>
 			<Nav />
-			<main className='services'>
-				<section className='our-services'>
-					<div className='image-container'>
+			<main className={style.services}>
+				<section className={style.ourServices}>
+					<div className={style.imageContainer}>
 						<img
 							src='/images/good-boy.jpg'
 							alt='Ted is one of the families very happy dogs.'
 						/>
 					</div>
-					<div className='container'>
-						<div className='overflow-container'>
+					<div className={style.container}>
+						<div className={style.overflowContainer}>
 							<h1>Our Services</h1>
 						</div>
-						<div className='overflow-container'>
+						<div className={style.overflowContainer}>
 							<p>
 								We offer single nights or longer stays as well as day boarding for
 								our guests. Every dog will have exercise three times per day in our
@@ -99,7 +100,7 @@ export default function Services() {
 						</div>
 					</div>
 				</section>
-				<section className='prices'>
+				<section className={style.prices}>
 					<h1
 						ref={pricesTitleRef}
 						style={{ animationPlayState: animationIsPlaying.pricesTitle }}
@@ -107,7 +108,7 @@ export default function Services() {
 						Prices
 					</h1>
 					<table
-						className='multiple-nights'
+						className={style.multipleNights}
 						ref={pricesTableRef}
 						style={{ animationPlayState: animationIsPlaying.pricesTable }}
 					>
@@ -153,7 +154,7 @@ export default function Services() {
 						</tbody>
 					</table>
 					<p
-						className='doggy-daycare'
+						className={style.doggyDaycare}
 						ref={doggyDayCareRef}
 						style={{ animationPlayState: animationIsPlaying.doggyDayCare }}
 					>
@@ -167,7 +168,7 @@ export default function Services() {
 						Price includes three walks and mid day meal if required.
 					</p>
 				</section>
-				<section className='important-information'>
+				<section className={style.importantInformation}>
 					<h1
 						ref={infoTitleRef}
 						style={{ animationPlayState: animationIsPlaying.infoTitle }}
