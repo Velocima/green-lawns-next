@@ -2,6 +2,7 @@ import React, { useRef, useState, useLayoutEffect } from 'react';
 import useWindowSize from '../hooks/useWindowSize';
 import Gallery from './gallery';
 import { galleryImages } from '../infoJs/galleryImages';
+import style from '../styles/about.module.css';
 
 export default function About() {
 	const [width, height] = useWindowSize();
@@ -90,10 +91,10 @@ export default function About() {
 	}, [width, height]);
 
 	return (
-		<main className='about-container'>
-			<section className='family'>
+		<section className={style.about}>
+			<section className={style.family}>
 				<div
-					className='image-container'
+					className={style.imageContainer}
 					ref={familyImageRef}
 					style={{ animationPlayState: animationIsPlaying.familyImage }}
 				>
@@ -104,16 +105,16 @@ export default function About() {
 						style={{ animationPlayState: animationIsPlaying.familyWallpaper }}
 					/>
 				</div>
-				<div className='family-text'>
-					<div className='overflow-container'>
+				<div className={style.familyText}>
+					<div className={style.overflowContainer}>
 						<h1
 							ref={familyTitleRef}
 							style={{ animationPlayState: animationIsPlaying.familyTitle }}
 						>
-							More than just a business
+							{/* More than just a business */}
 						</h1>
 					</div>
-					<div className='overflow-container'>
+					<div className={style.overflowContainer}>
 						<p
 							ref={familyTextRef}
 							style={{ animationPlayState: animationIsPlaying.familyText }}
@@ -132,17 +133,17 @@ export default function About() {
 					</div>
 				</div>
 			</section>
-			<section className='facilities'>
+			<section>
 				<div
-					className='banner'
+					className={style.banner}
 					ref={facilitiesBannerRef}
 					style={{ animationPlayState: animationIsPlaying.facilitiesBanner }}
 				>
 					<h1>Our facilities</h1>
 				</div>
-				<div className='tiles'>
+				<div className={style.tiles}>
 					<p
-						className='tile-1'
+						className={style.tile1}
 						style={{ animationPlayState: animationIsPlaying.firstRow }}
 						ref={firstRowRef}
 					>
@@ -162,7 +163,7 @@ export default function About() {
 						style={{ animationPlayState: animationIsPlaying.secondRow }}
 					/>
 					<p
-						className='tile-2'
+						className={style.tile2}
 						style={{ animationPlayState: animationIsPlaying.secondRow }}
 						ref={secondRowRef}
 					>
@@ -171,7 +172,7 @@ export default function About() {
 						we offer fresh water in their kennel at all times.
 					</p>
 					<p
-						className='tile-3'
+						className={style.tile3}
 						style={{ animationPlayState: animationIsPlaying.thirdRow }}
 						ref={thirdRowRef}
 					>
@@ -188,6 +189,6 @@ export default function About() {
 				</div>
 			</section>
 			<Gallery images={galleryImages} />
-		</main>
+		</section>
 	);
 }
