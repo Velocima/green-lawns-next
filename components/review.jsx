@@ -7,6 +7,8 @@ export default function Review(props) {
 			ref={props.reviewRef}
 			style={{
 				animationPlayState: props.animate ? 'running' : 'paused',
+				gridRowStart: props.gridRowStart,
+				gridRowEnd: props.gridRowStart + 1,
 			}}
 		>
 			<p>{props.review}</p>

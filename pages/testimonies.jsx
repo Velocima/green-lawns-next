@@ -4,6 +4,7 @@ import { reviews } from '../infoJs/Reviews';
 import useWindowSize from '../hooks/useWindowSize';
 import Nav from '../components/nav';
 import Footer from '../components/footer';
+import style from '../styles/testimonies.module.css';
 
 export default function Testimonials() {
 	const [width, height] = useWindowSize();
@@ -102,17 +103,17 @@ export default function Testimonials() {
 	return (
 		<>
 			<Nav />
-			<main className='reviews'>
+			<main className={style.reviews}>
 				<div
-					className='reviews-banner'
+					className={style.banner}
 					ref={reviewBannerRef}
 					style={{ animationPlayState: isVisible.reviewBanner ? 'running' : 'paused' }}
 				>
 					<h2>Testimonies</h2>
 				</div>
-				<div className='reviews-container'>
+				<div className={style.reviewsContainer}>
 					<div
-						className='background-shader'
+						className={style.backgroundShader}
 						ref={reviewBackgroundRef}
 						style={{
 							animationPlayState: isVisible.reviewBackground ? 'running' : 'paused',
@@ -120,12 +121,13 @@ export default function Testimonials() {
 					></div>
 					{reviews.map((review, i) => (
 						<Review
-							className={`review review${i + 1}`}
+							className={style.review}
 							review={review.review}
 							author={review.author}
 							key={`${i}${review.author}`}
 							reviewRef={reviewRefs[i]}
 							animate={isVisible[`review${i + 1}`]}
+							gridRowStart={i + 2}
 						/>
 					))}
 				</div>
