@@ -1,0 +1,157 @@
+.main {
+	margin-top: 10vh;
+	overflow-x: hidden;
+}
+
+.landing {
+	overflow-x: hidden;
+}
+
+.banner {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+		url('/images/banner-placeholder.jpg');
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	min-height: 50vh;
+	animation: fadeIn 1s ease-out backwards;
+}
+
+.titles {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 30px 0;
+	border-radius: 10px;
+}
+
+.titles h1,
+.titles h2 {
+	font-weight: 300;
+	color: white;
+	opacity: 0.85;
+	text-shadow: 2px 2px 3px #1fab89;
+}
+.titles h1 {
+	font-size: 5vw;
+	margin-bottom: 5vh;
+	animation: fadeIn 1s 1s backwards;
+}
+.titles h2 {
+	font-size: 2.5vw;
+	font-style: italic;
+	animation: fadeIn 1s 1.3s backwards;
+}
+
+.callToAction {
+	min-height: 40vh;
+	background: url('/images/doggo-background-texture-3.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: grid;
+	place-items: center;
+	width: 100%;
+	height: 100%;
+	animation: fadeIn 1s 0.5s ease-out backwards;
+}
+.callToAction a {
+	color: black;
+	font-weight: 300;
+	font-size: 4rem;
+	text-shadow: 2px 2px 3px #1fab89;
+	text-decoration: none;
+	padding: 40px 60px;
+	border-radius: 10px;
+	box-shadow: 7px 10px 10px #bf9b30;
+	background: radial-gradient(hsl(71, 78%, 78%), #ffbf00);
+	animation: fadeInFromRight 1s 1.5s backwards;
+	transition: 0.3s;
+}
+.callToAction a:hover {
+	transform: scale(1.05);
+}
+
+@media screen and (max-width: 1350px) {
+	.callToAction a {
+		font-size: 3rem;
+	}
+}
+@media screen and (max-width: 1000px) {
+	.title-banner {
+		min-height: 40vh;
+	}
+	.titles h1,
+	.titles h2 {
+		font-weight: 400;
+	}
+	.titles h2 {
+		font-size: 3vw;
+	}
+
+	.callToAction {
+		min-height: 50vh;
+	}
+	.callToAction a {
+		font-size: 2.5rem;
+	}
+}
+@media screen and (max-width: 700px) {
+	.titles {
+		padding: 0;
+	}
+	.titles h1 {
+		font-size: 2rem;
+		text-align: center;
+		padding: 0 20px;
+	}
+	.titles h2 {
+		font-size: 1.25rem;
+		text-align: center;
+		padding: 0 20px 10px;
+	}
+
+	.callToAction {
+		grid-row: 1 / span 2;
+	}
+	.callToAction a {
+		font-size: 2rem;
+		padding: 20px 30px;
+	}
+}
+@media screen and (min-width: 2500px) {
+	.callToAction a {
+		font-size: 6rem;
+	}
+}
+@media screen and (min-width: 3700px) {
+	.callToAction a {
+		font-size: 8rem;
+	}
+}
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@keyframes fadeInFromRight {
+	from {
+		opacity: 0;
+		transform: translateX(200%);
+	}
+	80% {
+		opacity: 0.7;
+	}
+	to {
+		opacity: 1;
+	}
+}
