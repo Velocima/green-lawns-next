@@ -1,0 +1,363 @@
+.contact {
+	margin-top: 10vh;
+}
+.contact h1,
+.contact h2,
+.contact th,
+.addressHeader,
+.phoneNumbersHeader {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	color: white;
+	opacity: 0.85;
+	text-shadow: 2px 2px 3px #1fab89;
+}
+.contact h1 {
+	font-size: 6rem;
+}
+.contact p,
+.contact td,
+.contact a {
+	font-size: 1.25rem;
+	font-family: 'Alegreya', serif;
+}
+.contactInfo {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows:
+		minmax(35vh, auto)
+		minmax(40vh, auto)
+		minmax(50vh, auto)
+		minmax(40vh, auto);
+	place-items: center;
+	background-color: #ecfaf3;
+}
+.contactInfo p {
+	width: 500px;
+	padding: 16px;
+	background-color: #d7fbe8;
+}
+
+.banner {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	grid-area: 1 / 1 / 2 / 3;
+	height: 100%;
+	width: 100%;
+	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+		url('/images/banner-placeholder-3.jpg');
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	animation: fadeIn 1s ease-out backwards;
+}
+.banner h1 {
+	margin-bottom: 5vh;
+	animation: fadeIn 1s 0.3s ease-out backwards;
+}
+.banner h2 {
+	font-size: 3rem;
+	font-style: italic;
+	animation: fadeIn 1s 0.6s ease-out backwards;
+}
+.phoneNumbers,
+.address {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+.phoneNumbers p,
+.address p {
+	padding-bottom: 20px;
+	text-align: center;
+	box-shadow: 7px 10px 10px #1fab89;
+	border-radius: 10px;
+}
+.phoneNumbers span,
+.address span {
+	color: black;
+	font-weight: 400;
+	padding-bottom: 20px;
+}
+.phoneNumbers {
+	grid-column: 1 / span 2;
+	background: url('/images/doggo-background-texture-2-crop-2.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 20px 0;
+	animation: fadeIn 1s 0.3s ease-out backwards;
+}
+.phoneNumbers p {
+	background: radial-gradient(hsl(71, 78%, 78%), #ffbf00);
+	box-shadow: 7px 10px 10px #bf9b30;
+	animation: fadeIn 1s 0.7s ease-out backwards;
+}
+.phoneNumbersHeader {
+	display: block;
+	font-size: 3rem;
+}
+.phoneNumbers a {
+	transition: all 0.3s;
+	display: inline-block;
+}
+.phoneNumbers span {
+	font-size: 2rem;
+	padding-left: 1rem;
+}
+.email {
+	font-size: inherit;
+	font-weight: bold;
+}
+.phoneNumbers a:hover {
+	transform: translateX(10px);
+}
+.contactInfo iframe {
+	grid-area: 3 / 1 / 3 / 3;
+	width: 100%;
+	height: 100%;
+	animation: fadeIn 1s 1s ease-out backwards;
+}
+.tableBackground {
+	grid-area: 4 / 1 / 5 / 2;
+	height: 100%;
+	width: 100%;
+	background: url('/images/doggo-background-texture-2-crop-2.png');
+	background-repeat: repeat;
+	background-size: cover;
+}
+.contactInfo table {
+	box-shadow: -7px 10px 10px #1fab89;
+	border-radius: 10px;
+	grid-area: 4 / 1 / 5 / 2;
+	width: 500px;
+	padding: 20px;
+	background-color: #d7fbe8;
+	animation: fadeIn 1s ease-out backwards;
+}
+.contactInfo th {
+	font-size: 3rem;
+	font-weight: 400;
+	color: black;
+}
+.contactInfo td,
+.contactInfo th {
+	border-bottom: 5px dotted #13614d;
+	border-right: none;
+	padding: 10px 0;
+}
+.contactInfo td:nth-child(2) {
+	text-align: center;
+}
+
+.address {
+	grid-area: 4 / 2 / 5 / 3;
+	margin: 20px 0;
+}
+.address p {
+	background: url('/images/doggo-background-texture-3.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	animation: fadeIn 1s ease-out backwards;
+}
+.addressHeader {
+	font-size: 3rem;
+	color: black;
+}
+@media screen and (max-width: 1350px) {
+	.banner h1 {
+		font-size: 5rem;
+	}
+	.banner h2 {
+		font-size: 2.5rem;
+	}
+
+	.contactInfo p {
+		width: 75%;
+		font-size: 1.25rem;
+	}
+	.phoneNumbers p {
+		width: 50%;
+	}
+	.phoneNumbersHeader {
+		font-size: 2.5rem;
+	}
+	.phoneNumbers a {
+	}
+	.phoneNumbers span {
+		font-size: 1.75rem;
+	}
+
+	.contactInfo table {
+		width: 75%;
+		margin: 20px 0;
+	}
+	.contactInfo th {
+		font-size: 2.5rem;
+	}
+	.contactInfo td {
+		font-size: 1.25rem;
+	}
+
+	.addressHeader {
+		font-size: 2.5rem;
+	}
+}
+@media screen and (max-width: 1050px) {
+	.contactInfo p {
+		width: 80%;
+		font-size: 1rem;
+	}
+	.phoneNumbers p {
+	}
+	.phoneNumbersHeader {
+		font-size: 2rem;
+	}
+	.phoneNumbers a {
+	}
+	.phoneNumbers span {
+		font-size: 1.375rem;
+	}
+
+	.contactInfo table {
+		width: 80%;
+		margin: 20px 0;
+		padding: 10px;
+	}
+	.contactInfo th {
+		font-size: 2rem;
+	}
+	.contactInfo td {
+		font-size: 1rem;
+	}
+	.address {
+		width: 80%;
+	}
+	.addressHeader {
+		font-size: 2rem;
+	}
+}
+@media screen and (max-width: 700px) {
+	.contactInfo {
+		grid-template-columns: 100%;
+		grid-template-rows: minmax(30vh, auto) repeat(4, minmax(30vh, auto));
+	}
+	.banner h1 {
+		font-size: 3.5rem;
+		text-align: center;
+	}
+	.banner h2 {
+		font-size: 1.75rem;
+		text-align: center;
+	}
+	.phoneNumbers {
+		grid-area: 2 / 1 / 3 / 2;
+	}
+	.email {
+		word-break: break-word !important;
+		padding-left: 0;
+	}
+	.contactInfo iframe {
+		grid-area: 3 / 1 / 4 / 2;
+	}
+	.contactInfo table {
+		grid-area: 4 / 1 / 5 / 2;
+		width: 85%;
+	}
+	.address {
+		grid-area: 5 / 1 / 6 / 2;
+		width: 100%;
+	}
+	.address p {
+		width: 80%;
+	}
+}
+@media screen and (min-width: 2500px) {
+	.banner h1 {
+		font-size: 8rem;
+	}
+	.banner h2 {
+		font-size: 4rem;
+	}
+
+	.phoneNumbers p {
+		width: 750px;
+		font-size: 1.75rem;
+	}
+	.phoneNumbersHeader {
+		font-size: 3.5rem;
+	}
+	.phoneNumbers span {
+		font-size: 2.25rem;
+	}
+
+	.contactInfo table {
+		width: 750px;
+	}
+	.contactInfo th {
+		font-size: 3.5rem;
+	}
+	.contactInfo td {
+		font-size: 1.75rem;
+	}
+
+	.address p {
+		width: 750px;
+		font-size: 1.75rem;
+	}
+	.addressHeader {
+		font-size: 3.5rem;
+	}
+}
+@media screen and (min-width: 3700px) {
+	.banner h1 {
+		font-size: 10rem;
+	}
+	.banner h2 {
+		font-size: 5rem;
+	}
+
+	.phoneNumbers p {
+		width: 1000px;
+		font-size: 2.5rem;
+	}
+	.phoneNumbersHeader {
+		font-size: 5rem;
+	}
+
+	.phoneNumbers span {
+		font-size: 2.25rem;
+	}
+
+	.contactInfo table {
+		width: 1000px;
+	}
+	.contactInfo th {
+		font-size: 5rem;
+	}
+	.contactInfo td {
+		font-size: 2.5rem;
+	}
+
+	.address p {
+		width: 1000px;
+		font-size: 2.5rem;
+	}
+	.addressHeader {
+		font-size: 5rem;
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}

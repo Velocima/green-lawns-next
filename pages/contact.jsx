@@ -3,6 +3,7 @@ import { useRef, useState, useLayoutEffect } from 'react';
 import useWindowSize from '../hooks/useWindowSize';
 import Nav from '../components/nav';
 import Footer from '../components/footer';
+import style from '../styles/contact.module.css';
 
 export default function Contact() {
 	const [width, height] = useWindowSize();
@@ -43,15 +44,15 @@ export default function Contact() {
 				<link rel='icon' href='/images/green-lawns-logo.png' />
 			</Head>
 			<Nav />
-			<main className='contact'>
-				<section className='contact-info'>
-					<div className='banner'>
+			<main className={style.contact}>
+				<section className={style.contactInfo}>
+					<div className={style.banner}>
 						<h1>Get In Touch</h1>
 						<h2>We'd Love to Hear from You!</h2>
 					</div>
-					<div className='phone-numbers'>
+					<div className={style.phoneNumbers}>
 						<p>
-							<span className='phone-numbers-header'>Book now via:</span>
+							<span className={style.phoneNumbersHeader}>Book now via:</span>
 							Telephone:{' '}
 							<a href='tel:01600740111'>
 								<span>01600 740111</span>
@@ -64,7 +65,7 @@ export default function Contact() {
 							<br />
 							Email:{' '}
 							<a href='mailto:greenlawnskennels@icloud.com'>
-								<span className='email'>greenlawnskennels@icloud.com</span>
+								<span className={style.email}>greenlawnskennels@icloud.com</span>
 							</a>
 						</p>
 					</div>
@@ -78,7 +79,7 @@ export default function Contact() {
 						tabIndex='0'
 						title='Google maps'
 					></iframe>
-					<div className='table-background'></div>
+					<div className={style.tableBackground}></div>
 					<table
 						ref={openingHoursRef}
 						style={{ animationPlayState: animationIsPlaying.openingHours }}
@@ -101,12 +102,12 @@ export default function Contact() {
 							</tr>
 						</tbody>
 					</table>
-					<div className='address'>
+					<div className={style.address}>
 						<p
 							ref={addressRef}
 							style={{ animationPlayState: animationIsPlaying.address }}
 						>
-							<span className='address-header'>Our Address</span>
+							<span className={style.addressHeader}>Our Address</span>
 							<br />
 							Green Lawns
 							<br />
