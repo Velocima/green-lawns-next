@@ -10,7 +10,7 @@ export default function Home() {
 		<>
 			<Head>
 				<title>Green Lawns Boarding Kennels</title>
-				<link rel='icon' href='/images/green-lawns-logo.png' />
+				<link rel='icon' href='/images/favicon.png' />
 			</Head>
 			<Nav />
 			<main className={style.main}>

@@ -75,7 +75,7 @@ export default function Services() {
 		<>
 			<Head>
 				<title>Sevices | Green Lawns Boarding Kennels</title>
-				<link rel='icon' href='/images/green-lawns-logo.png' />
+				<link rel='icon' href='/images/favicon.png' />
 			</Head>
 			<Nav />
 			<main className={style.services}>
