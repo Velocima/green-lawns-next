@@ -1,9 +1,10 @@
 import Link from 'next/link';
 import { pages } from '../infoJs/pages';
+import style from '../styles/footer.module.css';
 
 export default function Footer() {
 	return (
-		<footer>
+		<footer className={style.footer}>
 			<ul>
 				<li key='first-item'>Navigate:</li>
 				{pages.map((page, i) => (
@@ -39,7 +40,7 @@ export default function Footer() {
 				<br />
 				Email:{' '}
 				<a href='mailto:greenlawnskennels@icloud.com'>
-					<span className='email'>greenlawnskennels@icloud.com</span>
+					<span className={style.email}>greenlawnskennels@icloud.com</span>
 				</a>
 			</p>
 			<p>
