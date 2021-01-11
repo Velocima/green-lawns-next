@@ -1,0 +1,86 @@
+.gallery {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+	grid-auto-rows: 600px;
+	gap: 20px;
+	place-items: center;
+	width: 100%;
+	padding: 20px;
+	background: url('/images/doggo-background-texture-3.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.overflowContainer {
+	overflow: hidden;
+	height: 100%;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.overflowContainer img {
+	object-fit: cover;
+	object-position: top;
+	transition: all 0.3s;
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+}
+.overflowContainer img:hover {
+	transform: scale(1.1);
+}
+.modal {
+	display: grid;
+	place-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100%;
+	background-color: hsla(0, 0%, 0%, 0.7);
+	transition: 0.7s;
+	z-index: 10000;
+}
+
+.modal button {
+	position: fixed;
+	top: 5vh;
+	right: 5vh;
+	font-size: 30px;
+	font-weight: bold;
+	padding: 10px;
+	border-radius: 5px;
+	border: 0;
+	background-color: #d7fbe8;
+	opacity: 0.9;
+	transition: 0.15s;
+}
+.modal button:focus {
+	outline: 0;
+	border: 0;
+}
+.modal button:active {
+	transform: scale(0.9) !important;
+}
+.modal button:hover {
+	transform: scale(1.1);
+}
+.modal img {
+	max-height: 90vh;
+	max-width: 90%;
+}
+
+@media screen and (max-width: 1100px) {
+	.gallery {
+		grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+		grid-auto-rows: 450px;
+	}
+}
+@media screen and (max-width: 540px) {
+	.gallery {
+		grid-template-columns: 1fr;
+		grid-auto-rows: 400px;
+		gap: 10px;
+		padding: 10px;
+	}
+}

@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
+import style from '../styles/gallery.module.css';
+
 export default function Gallery(props) {
 	const [isModalOpen, setIsModalOpen] = useState(false);
 	const [modalImage, setModalImage] = useState(props.images[0]);
@@ -24,14 +26,14 @@ export default function Gallery(props) {
 	}, [isModalOpen]);
 
 	return (
-		<section className='gallery'>
+		<section className={style.gallery}>
 			{props.images.map((image, i) => (
-				<div className='overflow-container' key={i}>
+				<div className={style.overflowContainer} key={i}>
 					<img src={image.image} alt={image.alt} onClick={handleImageClick} />
 				</div>
 			))}
 			<div
-				className='modal'
+				className={style.modal}
 				style={{
 					opacity: isModalOpen ? '1' : '0',
 					pointerEvents: isModalOpen ? 'all' : 'none',
