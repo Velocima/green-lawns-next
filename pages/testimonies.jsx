@@ -1,4 +1,4 @@
-import { useRef, useState, useLayoutEffect } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import Review from '../components/review';
 import { reviews } from '../infoJs/Reviews';
 import useWindowSize from '../hooks/useWindowSize';
@@ -45,7 +45,7 @@ export default function Testimonials() {
 		review8Ref,
 		review9Ref,
 	];
-	useLayoutEffect(() => {
+	useEffect(() => {
 		const topPosition = (element) => element.current.getBoundingClientRect().top;
 
 		const reviewBannerPosition = topPosition(reviewBannerRef),

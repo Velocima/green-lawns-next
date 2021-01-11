@@ -1,4 +1,4 @@
-import React, { useRef, useState, useLayoutEffect } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import useWindowSize from '../hooks/useWindowSize';
 import Gallery from './gallery';
 import { galleryImages } from '../infoJs/galleryImages';
@@ -26,7 +26,7 @@ export default function About() {
 		secondRowRef = useRef(null),
 		thirdRowRef = useRef(null);
 
-	useLayoutEffect(() => {
+	useEffect(() => {
 		const topPosition = (element) => element.current.getBoundingClientRect().top;
 
 		const familyImagePosition = topPosition(familyWallpaperRef),

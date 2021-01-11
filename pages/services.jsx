@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { useRef, useState, useLayoutEffect } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import useWindowSize from '../hooks/useWindowSize';
 import Nav from '../components/nav';
 import Footer from '../components/footer';
@@ -23,7 +23,7 @@ export default function Services() {
 		infoListRef = useRef(null),
 		openingHoursRef = useRef(null);
 
-	useLayoutEffect(() => {
+	useEffect(() => {
 		const topPosition = (element) => element.current.getBoundingClientRect().top;
 
 		const pricesTitlePosition = topPosition(pricesTitleRef),
