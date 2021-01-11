@@ -111,7 +111,7 @@ export default function About() {
 							ref={familyTitleRef}
 							style={{ animationPlayState: animationIsPlaying.familyTitle }}
 						>
-							{/* More than just a business */}
+							More than just a business
 						</h1>
 					</div>
 					<div className={style.overflowContainer}>
