@@ -5,6 +5,7 @@ import useWindowSize from '../hooks/useWindowSize';
 import Nav from '../components/nav';
 import Footer from '../components/footer';
 import style from '../styles/testimonies.module.css';
+import Head from 'next/head';
 
 export default function Testimonials() {
 	const [width, height] = useWindowSize();
@@ -102,6 +103,10 @@ export default function Testimonials() {
 	}, [width, height]);
 	return (
 		<>
+			<Head>
+				<title>Testimonies | Green Lawns Boarding Kennels</title>
+				<link rel='icon' href='/images/green-lawns-logo.png' />
+			</Head>
 			<Nav />
 			<main className={style.reviews}>
 				<div
