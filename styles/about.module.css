@@ -30,16 +30,15 @@
 	position: relative;
 	backface-visibility: hidden;
 	animation: fadeIn 1s ease-out backwards;
+	transition: 0.5s;
 }
 .imageContainer img:nth-child(1) {
-	transform: rotate(-19deg);
 	box-shadow: 0px 5px 11px #171717;
 	bottom: 53px;
 	left: 70px;
 	object-position: bottom;
 }
 .imageContainer img:nth-child(2) {
-	transform: rotate(2deg);
 	box-shadow: 0px 7px 15px #272727;
 	top: 40px;
 	left: 20px;
@@ -48,7 +47,6 @@
 	animation-delay: 0.4s;
 }
 .imageContainer img:nth-child(3) {
-	transform: rotate(11deg);
 	box-shadow: 0px 5px 11px #151515;
 	right: 80px;
 	bottom: 20px;

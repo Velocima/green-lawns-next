@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from 'react';
+import React, { useRef, useState } from 'react';
 import useAnimationPlayState from '../hooks/useAnimationPlayState';
 
 import style from '../styles/about.module.css';
@@ -28,25 +28,39 @@ export default function About() {
 		tileTextTwoPlayState = useAnimationPlayState(tileTextTwoRef),
 		tileTextThreePlayState = useAnimationPlayState(tileTextThreeRef);
 
+	const [isHovered, setIsHovered] = useState(false);
+
+	const handleMouseEnter = () => {
+		setIsHovered(true);
+	};
+	const handleMouseLeave = () => {
+		setIsHovered(false);
+	};
+
+	const imageOneStyle = {
+		animationPlayState: imageContainerPlayState,
+		transform: isHovered ? 'rotate(-23deg) translate(-5px, -7px)' : 'rotate(-19deg)',
+	};
+	const imageTwoStyle = {
+		animationPlayState: imageContainerPlayState,
+		transform: isHovered ? 'rotate(1deg) translate(3px, -10px) scale(1.05)' : 'rotate(2deg)',
+	};
+	const imageThreeStyle = {
+		animationPlayState: imageContainerPlayState,
+		transform: isHovered ? 'rotate(13deg) translate(7px, -5px) scale(1.02)' : 'rotate(11deg)',
+	};
 	return (
 		<section className={style.about}>
 			<section className={style.family}>
-				<div className={style.imageContainer} ref={imageContainerRef}>
-					<img
-						src='/images/about/hope.png'
-						alt=''
-						style={{ animationPlayState: imageContainerPlayState }}
-					/>
-					<img
-						src='/images/about/julie.png'
-						alt=''
-						style={{ animationPlayState: imageContainerPlayState }}
-					/>
-					<img
-						src='/images/about/ted.png'
-						alt=''
-						style={{ animationPlayState: imageContainerPlayState }}
-					/>
+				<div
+					className={style.imageContainer}
+					ref={imageContainerRef}
+					onMouseEnter={handleMouseEnter}
+					onMouseLeave={handleMouseLeave}
+				>
+					<img src='/images/about/hope.png' alt='' style={imageOneStyle} />
+					<img src='/images/about/julie.png' alt='' style={imageTwoStyle} />
+					<img src='/images/about/ted.png' alt='' style={imageThreeStyle} />
 				</div>
 				<p ref={familyTextRef} style={{ animationPlayState: familyTextPlayState }}>
 					We are a highly reputable and established boarding kennels offering first class
