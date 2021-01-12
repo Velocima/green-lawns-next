@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react';
-import useAnimationPlayState from '../hooks/useAnimationPlayState';
+import useAnimationPlaystate from '../hooks/useAnimationPlaystate';
 
 import style from '../styles/about.module.css';
 
@@ -16,17 +16,17 @@ export default function About() {
 		tileTextTwoRef = useRef(null),
 		tileTextThreeRef = useRef(null);
 
-	const imageContainerPlayState = useAnimationPlayState(imageContainerRef),
-		familyTextPlayState = useAnimationPlayState(familyTextRef),
-		tileOnePlayState = useAnimationPlayState(tileOneRef),
-		tileTwoPlayState = useAnimationPlayState(tileTwoRef),
-		tileThreePlayState = useAnimationPlayState(tileThreeRef),
-		tileFourPlayState = useAnimationPlayState(tileFourRef),
-		tileFivePlayState = useAnimationPlayState(tileFiveRef),
-		tileSixPlayState = useAnimationPlayState(tileSixRef),
-		tileTextOnePlayState = useAnimationPlayState(tileTextOneRef),
-		tileTextTwoPlayState = useAnimationPlayState(tileTextTwoRef),
-		tileTextThreePlayState = useAnimationPlayState(tileTextThreeRef);
+	const imageContainerPlayState = useAnimationPlaystate(imageContainerRef),
+		familyTextPlayState = useAnimationPlaystate(familyTextRef),
+		tileOnePlayState = useAnimationPlaystate(tileOneRef),
+		tileTwoPlayState = useAnimationPlaystate(tileTwoRef),
+		tileThreePlayState = useAnimationPlaystate(tileThreeRef),
+		tileFourPlayState = useAnimationPlaystate(tileFourRef),
+		tileFivePlayState = useAnimationPlaystate(tileFiveRef),
+		tileSixPlayState = useAnimationPlaystate(tileSixRef),
+		tileTextOnePlayState = useAnimationPlaystate(tileTextOneRef),
+		tileTextTwoPlayState = useAnimationPlaystate(tileTextTwoRef),
+		tileTextThreePlayState = useAnimationPlaystate(tileTextThreeRef);
 
 	const [isHovered, setIsHovered] = useState(false);
 
