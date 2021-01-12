@@ -1,188 +1,128 @@
 import React, { useRef, useState, useEffect } from 'react';
-import useWindowSize from '../hooks/useWindowSize';
+import useAnimationPlayState from '../hooks/useAnimationPlayState';
+
 import style from '../styles/about.module.css';
 
 export default function About() {
-	const [width, height] = useWindowSize();
-	const [animationIsPlaying, setAnimationIsPlaying] = useState({
-		familyImage: 'paused',
-		familyWallpaper: 'paused',
-		familyTitle: 'paused',
-		familyText: 'paused',
-		facilitiesBanner: 'paused',
-		firstRow: 'paused',
-		secondRow: 'paused',
-		thirdRow: 'paused',
-	});
-
-	const familyImageRef = useRef(null),
-		familyWallpaperRef = useRef(null),
-		familyTitleRef = useRef(null),
+	const imageContainerRef = useRef(null),
 		familyTextRef = useRef(null),
-		facilitiesBannerRef = useRef(null),
-		firstRowRef = useRef(null),
-		secondRowRef = useRef(null),
-		thirdRowRef = useRef(null);
+		tileOneRef = useRef(null),
+		tileTwoRef = useRef(null),
+		tileThreeRef = useRef(null),
+		tileFourRef = useRef(null),
+		tileFiveRef = useRef(null),
+		tileSixRef = useRef(null),
+		tileTextOneRef = useRef(null),
+		tileTextTwoRef = useRef(null),
+		tileTextThreeRef = useRef(null);
 
-	useEffect(() => {
-		const topPosition = (element) => element.current.getBoundingClientRect().top;
-
-		const familyImagePosition = topPosition(familyWallpaperRef),
-			familyWallpaperPosition = topPosition(familyWallpaperRef),
-			familyTitlePosition = topPosition(familyTitleRef),
-			familyTextPosition = topPosition(familyTextRef),
-			facilitiesBannerPosition = topPosition(facilitiesBannerRef),
-			firstRowPosition = topPosition(firstRowRef),
-			secondRowPosition = topPosition(secondRowRef),
-			thirdRowPosition = topPosition(thirdRowRef);
-
-		const onScroll = () => {
-			const scrollPosition = window.scrollY + height;
-			if (
-				animationIsPlaying.familyImage !== 'running' &&
-				familyImagePosition < scrollPosition
-			) {
-				setAnimationIsPlaying((prevState) => ({ ...prevState, familyImage: 'running' }));
-			}
-			if (
-				animationIsPlaying.familyWallpaper !== 'running' &&
-				familyWallpaperPosition < scrollPosition
-			) {
-				setAnimationIsPlaying((prevState) => ({
-					...prevState,
-					familyWallpaper: 'running',
-				}));
-			}
-			if (
-				animationIsPlaying.familyTitle !== 'running' &&
-				familyTitlePosition < scrollPosition
-			) {
-				setAnimationIsPlaying((prevState) => ({ ...prevState, familyTitle: 'running' }));
-			}
-			if (
-				animationIsPlaying.thifamilyTextrdRow !== 'running' &&
-				familyTextPosition < scrollPosition
-			) {
-				setAnimationIsPlaying((prevState) => ({ ...prevState, familyText: 'running' }));
-			}
-			if (
-				animationIsPlaying.facilitiesBanner !== 'running' &&
-				facilitiesBannerPosition < scrollPosition
-			) {
-				setAnimationIsPlaying((prevState) => ({
-					...prevState,
-					facilitiesBanner: 'running',
-				}));
-			}
-			if (animationIsPlaying.firstRow !== 'running' && firstRowPosition < scrollPosition) {
-				setAnimationIsPlaying((prevState) => ({ ...prevState, firstRow: 'running' }));
-			}
-			if (animationIsPlaying.secondRow !== 'running' && secondRowPosition < scrollPosition) {
-				setAnimationIsPlaying((prevState) => ({ ...prevState, secondRow: 'running' }));
-			}
-			if (animationIsPlaying.thirdRow !== 'running' && thirdRowPosition < scrollPosition) {
-				setAnimationIsPlaying((prevState) => ({ ...prevState, thirdRow: 'running' }));
-			}
-		};
-		window.addEventListener('scroll', onScroll);
-		return () => window.removeEventListener('scroll', onScroll);
-	}, [width, height]);
+	const imageContainerPlayState = useAnimationPlayState(imageContainerRef),
+		familyTextPlayState = useAnimationPlayState(familyTextRef),
+		tileOnePlayState = useAnimationPlayState(tileOneRef),
+		tileTwoPlayState = useAnimationPlayState(tileTwoRef),
+		tileThreePlayState = useAnimationPlayState(tileThreeRef),
+		tileFourPlayState = useAnimationPlayState(tileFourRef),
+		tileFivePlayState = useAnimationPlayState(tileFiveRef),
+		tileSixPlayState = useAnimationPlayState(tileSixRef),
+		tileTextOnePlayState = useAnimationPlayState(tileTextOneRef),
+		tileTextTwoPlayState = useAnimationPlayState(tileTextTwoRef),
+		tileTextThreePlayState = useAnimationPlayState(tileTextThreeRef);
 
 	return (
 		<section className={style.about}>
 			<section className={style.family}>
-				<div
-					className={style.imageContainer}
-					ref={familyImageRef}
-					style={{ animationPlayState: animationIsPlaying.familyImage }}
-				>
+				<div className={style.imageContainer} ref={imageContainerRef}>
 					<img
-						src='/images/good-boys-and-owner.jpg'
+						src='/images/about/hope.png'
 						alt=''
-						ref={familyWallpaperRef}
-						style={{ animationPlayState: animationIsPlaying.familyWallpaper }}
+						style={{ animationPlayState: imageContainerPlayState }}
+					/>
+					<img
+						src='/images/about/julie.png'
+						alt=''
+						style={{ animationPlayState: imageContainerPlayState }}
+					/>
+					<img
+						src='/images/about/ted.png'
+						alt=''
+						style={{ animationPlayState: imageContainerPlayState }}
 					/>
 				</div>
-				<div className={style.familyText}>
-					<div className={style.overflowContainer}>
-						<h1
-							ref={familyTitleRef}
-							style={{ animationPlayState: animationIsPlaying.familyTitle }}
-						>
-							More than just a business
-						</h1>
-					</div>
-					<div className={style.overflowContainer}>
-						<p
-							ref={familyTextRef}
-							style={{ animationPlayState: animationIsPlaying.familyText }}
-						>
-							We are a highly reputable and established boarding kennels offering
-							first class care for our guests. We are situated just outside Monmouth
-							within easy reach of the M4 and A449. Our Kennels are fully licensed by
-							Monmouthshire County Council and Insured by Pet Plan UK Ltd. We pride
-							ourselves in treating each guest as an individual and we care with our
-							kindness and attention to detail. We exercise our doggies three times a
-							day in our beautiful enclosed paddocks where they can socialise with
-							others or, if you prefer can be exercised individually. We specialise in
-							anxious or nervous dogs, giving them the extra time to either make
-							friends with others or to be relaxed just with us.
-						</p>
-					</div>
-				</div>
+				<p ref={familyTextRef} style={{ animationPlayState: familyTextPlayState }}>
+					We are a highly reputable and established boarding kennels offering first class
+					care for our guests. We are situated just outside Monmouth within easy reach of
+					the M4 and A449. Our Kennels are fully licensed by Monmouthshire County Council
+					and Insured by Pet Plan UK Ltd. We pride ourselves in treating each guest as an
+					individual and we care with our kindness and attention to detail. We exercise
+					our doggies three times a day in our beautiful enclosed paddocks where they can
+					socialise with others or, if you prefer can be exercised individually. We
+					specialise in anxious or nervous dogs, giving them the extra time to either make
+					friends with others or to be relaxed just with us.
+				</p>
 			</section>
 			<section>
-				<div
-					className={style.banner}
-					ref={facilitiesBannerRef}
-					style={{ animationPlayState: animationIsPlaying.facilitiesBanner }}
-				>
-					<h1>Our facilities</h1>
-				</div>
 				<div className={style.tiles}>
-					<p
-						className={style.tile1}
-						style={{ animationPlayState: animationIsPlaying.firstRow }}
-						ref={firstRowRef}
+					<div
+						className={style.textTile}
+						ref={tileOneRef}
+						style={{ animationPlayState: tileOnePlayState }}
 					>
-						Our Kennels are arranged in two blocks with ten kennels in each. They are
-						all heated and temperature checked twice daily. Every kennel has a inside
-						cosy house and an outside exercise covered area. All bedding and beds are
-						provided but we welcome you to bring yours should you wish.
-					</p>
+						<p
+							ref={tileTextOneRef}
+							style={{ animationPlayState: tileTextOnePlayState }}
+						>
+							Our Kennels are arranged in two blocks with ten kennels in each. They
+							are all heated and temperature checked twice daily. Every kennel has a
+							inside cosy house and an outside exercise covered area. All bedding and
+							beds are provided but we welcome you to bring yours should you wish.
+						</p>
+					</div>
 					<img
-						src='/images/dog-placeholder-1.jpg'
+						src='/images/about/dog-placeholder-1.jpg'
 						alt=''
-						style={{ animationPlayState: animationIsPlaying.firstRow }}
+						ref={tileTwoRef}
+						style={{ animationPlayState: tileTwoPlayState }}
 					/>
 					<img
-						src='/images/dog-placeholder-3.jpg'
+						src='/images/about/dog-placeholder-3.jpg'
 						alt=''
-						style={{ animationPlayState: animationIsPlaying.secondRow }}
+						ref={tileThreeRef}
+						style={{ animationPlayState: tileThreePlayState }}
 					/>
-					<p
-						className={style.tile2}
-						style={{ animationPlayState: animationIsPlaying.secondRow }}
-						ref={secondRowRef}
+					<div
+						className={style.textTile}
+						ref={tileFourRef}
+						style={{ animationPlayState: tileFourPlayState }}
 					>
-						Our top of the range foods include both wet and dry. If your dog requires a
-						specific diet, we ask that you provide this for them. Bowls are supplied and
-						we offer fresh water in their kennel at all times.
-					</p>
-					<p
-						className={style.tile3}
-						style={{ animationPlayState: animationIsPlaying.thirdRow }}
-						ref={thirdRowRef}
+						<p
+							ref={tileTextTwoRef}
+							style={{ animationPlayState: tileTextTwoPlayState }}
+						>
+							Our top of the range foods include both wet and dry. If your dog
+							requires a specific diet, we ask that you provide this for them. Bowls
+							are supplied and we offer fresh water in their kennel at all times.
+						</p>
+					</div>
+					<div
+						className={style.textTile}
+						ref={tileFiveRef}
+						style={{ animationPlayState: tileFivePlayState }}
 					>
-						If your doggie requires medication during their stay, we can happily
-						administer this. We simply require that you write all the details on the
-						medication boxes and we will require you to fill out a quick medical form
-						for them.
-					</p>
+						<p
+							ref={tileTextThreeRef}
+							style={{ animationPlayState: tileTextThreePlayState }}
+						>
+							If your doggie requires medication during their stay, we can happily
+							administer this. We simply require that you write all the details on the
+							medication boxes and we will require you to fill out a quick medical
+							form for them.
+						</p>
+					</div>
 					<img
-						src='/images/dog-placeholder-2.jpg'
+						src='/images/about/dog-placeholder-2.jpg'
 						alt=''
-						style={{ animationPlayState: animationIsPlaying.thirdRow }}
+						ref={tileSixRef}
+						style={{ animationPlayState: tileSixPlayState }}
 					/>
 				</div>
 			</section>

@@ -1,9 +1,13 @@
 .main {
-	margin-top: 10vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
 }
 
 .landing {
-	overflow-x: hidden;
+	width: 100%;
 }
 
 .banner {
@@ -12,14 +16,15 @@
 	justify-content: center;
 	align-items: center;
 	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-		url('/images/banner-placeholder.jpg');
+		url('/images/landing/banner.jpg');
 	background-position: center;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 100%;
-	min-height: 50vh;
-	animation: fadeIn 1s ease-out backwards;
+	height: 70vh;
+	min-height: 500px;
+	animation: fadeIn 0.5s ease-out backwards;
 }
 
 .titles {
@@ -27,113 +32,64 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding: 30px 0;
-	border-radius: 10px;
+	margin: 10vh 50px 0;
 }
 
 .titles h1,
 .titles h2 {
-	font-weight: 300;
+	font-weight: 400;
 	color: white;
-	opacity: 0.85;
-	text-shadow: 2px 2px 3px #1fab89;
+	text-shadow: 4px 6px 8px #13614d;
+	text-align: center;
 }
 .titles h1 {
-	font-size: 5vw;
 	margin-bottom: 5vh;
-	animation: fadeIn 1s 1s backwards;
+	font-size: 85px;
+	animation: fadeIn 0.7s 0.3s backwards;
 }
 .titles h2 {
-	font-size: 2.5vw;
+	font-size: 55px;
 	font-style: italic;
-	animation: fadeIn 1s 1.3s backwards;
+	animation: fadeIn 0.7s 0.5s backwards;
 }
 
 .callToAction {
-	min-height: 40vh;
-	background: url('/images/doggo-background-texture-3.png');
+	min-height: 30vh;
+	background: url('/images/dark-wallpaper.png');
 	background-repeat: no-repeat;
 	background-size: cover;
 	display: grid;
 	place-items: center;
 	width: 100%;
 	height: 100%;
-	animation: fadeIn 1s 0.5s ease-out backwards;
+	animation: fadeIn 0.5s 0.2s ease-out backwards;
 }
 .callToAction a {
+	display: inline-flex;
+	align-items: center;
 	color: black;
-	font-weight: 300;
-	font-size: 4rem;
-	text-shadow: 2px 2px 3px #1fab89;
-	text-decoration: none;
-	padding: 40px 60px;
-	border-radius: 10px;
-	box-shadow: 7px 10px 10px #bf9b30;
-	background: radial-gradient(hsl(71, 78%, 78%), #ffbf00);
-	animation: fadeInFromRight 1s 1.5s backwards;
-	transition: 0.3s;
+	font-weight: 400;
+	font-size: 55px;
+	padding: 30px;
+	margin: 30px;
+	border-radius: 20px;
+	background-color: #fcbb46;
+	box-shadow: 4px 6px 8px #13614d;
+	animation: fadeIn 0.7s 0.7s backwards;
+	transition: 0.2s ease-out;
 }
 .callToAction a:hover {
-	transform: scale(1.05);
+	font-size: 60px;
+	padding: 35px;
 }
 
-@media screen and (max-width: 1350px) {
-	.callToAction a {
-		font-size: 3rem;
-	}
+.callToAction svg {
+	fill: #553907;
+	margin-left: 15px;
+	height: 60px;
+	width: 50px;
 }
-@media screen and (max-width: 1000px) {
-	.title-banner {
-		min-height: 40vh;
-	}
-	.titles h1,
-	.titles h2 {
-		font-weight: 400;
-	}
-	.titles h2 {
-		font-size: 3vw;
-	}
 
-	.callToAction {
-		min-height: 50vh;
-	}
-	.callToAction a {
-		font-size: 2.5rem;
-	}
-}
-@media screen and (max-width: 700px) {
-	.titles {
-		padding: 0;
-	}
-	.titles h1 {
-		font-size: 2rem;
-		text-align: center;
-		padding: 0 20px;
-	}
-	.titles h2 {
-		font-size: 1.25rem;
-		text-align: center;
-		padding: 0 20px 10px;
-	}
-
-	.callToAction {
-		grid-row: 1 / span 2;
-	}
-	.callToAction a {
-		font-size: 2rem;
-		padding: 20px 30px;
-	}
-}
-@media screen and (min-width: 2500px) {
-	.callToAction a {
-		font-size: 6rem;
-	}
-}
-@media screen and (min-width: 3700px) {
-	.callToAction a {
-		font-size: 8rem;
-	}
-}
 @keyframes fadeIn {
 	from {
 		opacity: 0;
@@ -142,15 +98,78 @@
 		opacity: 1;
 	}
 }
-@keyframes fadeInFromRight {
-	from {
-		opacity: 0;
-		transform: translateX(200%);
+
+@media screen and (max-width: 1050px) {
+	.banner {
+		min-height: 350px;
 	}
-	80% {
-		opacity: 0.7;
+	.titles {
+		margin: 0 30px;
 	}
-	to {
-		opacity: 1;
+	.titles h1 {
+		font-size: 60px;
+	}
+	.titles h2 {
+		margin-bottom: 5vh;
+		font-size: 40px;
+	}
+	.callToAction a {
+		font-size: 40px;
+		padding: 20px;
+	}
+	.callToAction svg {
+		height: 45px;
+		width: 37px;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.banner {
+		min-height: 250px;
+		height: 60vh;
+	}
+	.titles {
+		margin: 0 20px;
+	}
+	.titles h1 {
+		font-size: 40px;
+	}
+	.titles h2 {
+		font-size: 28px;
+	}
+	.callToAction {
+		height: 40vh;
+	}
+	.callToAction a {
+		font-size: 28px;
+		margin: 20px 0;
+	}
+	.callToAction svg {
+		height: 33px;
+		width: 28px;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.banner {
+		min-height: 250px;
+		height: 60vh;
+	}
+	.titles h1 {
+		font-size: 32px;
+	}
+	.titles h2 {
+		font-size: 22px;
+	}
+	.callToAction {
+		height: 40vh;
+	}
+	.callToAction a {
+		font-size: 22px;
+		margin: 20px 0;
+	}
+	.callToAction svg {
+		height: 24px;
+		width: 20px;
 	}
 }
