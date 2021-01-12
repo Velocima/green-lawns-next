@@ -62,7 +62,13 @@ export default function Nav(props) {
 				style={{ pointerEvents: width > 1050 ? 'auto' : !showNav ? 'none' : 'auto' }}
 			>
 				{pages.map((page, i) => (
-					<li key={`${i}${page}`} style={{ opacity: showNav ? 1 : 0 }}>
+					<li
+						key={`${i}${page}`}
+						style={{
+							opacity: showNav ? 1 : 0,
+							transition: width > 1050 ? '0s' : '0.5s',
+						}}
+					>
 						<Link href={page.route} onClick={handleNavButtonClick}>
 							<a>{page.navText}</a>
 						</Link>
