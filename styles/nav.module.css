@@ -1,4 +1,141 @@
 .nav {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	height: 8vh;
+	min-height: 70px;
+	z-index: 100;
+	opacity: 0.98;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	flex-grow: 1;
+	width: auto;
+	height: 100%;
+	background-color: #9df3c4;
+}
+
+.logo img {
+	max-height: 90%;
+	margin-left: 20px;
+}
+
+.navButton {
+	display: none;
+}
+
+.links {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	list-style-type: none;
+}
+.links li {
+	display: grid;
+	place-items: center;
+	height: 100%;
+	width: 100%;
+	min-width: 185px;
+	font-size: 20px;
+	text-align: center;
+	transition: 0.5s;
+}
+
+.links li:nth-child(1) {
+	background-color: #d7fbe8;
+}
+.links li:nth-child(2) {
+	background-color: #9df3c4;
+}
+.links li:nth-child(3) {
+	background-color: #62d2a2;
+}
+.links li:nth-child(4) {
+	background-color: #1fab89;
+}
+.links li:nth-child(5) {
+	background-color: #13614d;
+}
+
+.tab {
+	width: 100%;
+	height: 20px;
+}
+@media screen and (max-width: 1050px) {
+	.nav {
+		background-color: none;
+		opacity: 1;
+	}
+	.navButton {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-evenly;
+		position: fixed;
+		top: 3vh;
+		right: 3vh;
+		z-index: 5000;
+		height: 39px;
+		width: 39px;
+		background-color: #ecfaf3d3;
+		border-radius: 5px;
+	}
+	.line {
+		height: 4px;
+		width: 80%;
+		position: relative;
+		border-radius: 2px;
+		background-color: #13614d;
+		transition: 0.5s;
+	}
+	.logo {
+		position: fixed;
+		top: 3vh;
+		left: 3vh;
+		height: 39px;
+		width: 39px;
+		border-radius: 5px;
+		background-color: #ecfaf3d3;
+	}
+	.logo img {
+		height: 100%;
+		width: 100%;
+		margin: 0;
+	}
+	.links {
+		flex-direction: column;
+		position: fixed;
+		top: 0;
+		right: 0;
+		height: 100vh;
+		width: 100%;
+	}
+	.tab {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 2500px) {
+	.links li {
+		font-size: 2.25rem;
+		width: 300px;
+	}
+}
+@media screen and (min-width: 3700px) {
+	.links li {
+		font-size: 3rem;
+		width: 400px;
+	}
+}
+
+/* 
+.nav {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	align-items: center;
@@ -182,4 +319,4 @@
 	to {
 		opacity: 1;
 	}
-}
+} */
