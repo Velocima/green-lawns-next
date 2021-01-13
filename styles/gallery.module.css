@@ -2,16 +2,16 @@
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
 	grid-auto-rows: 600px;
-	gap: 20px;
+	grid-auto-flow: dense;
 	place-items: center;
 	width: 100%;
-	padding: 20px;
-	background: url('/images/doggo-background-texture-3.png');
-	background-repeat: no-repeat;
-	background-size: cover;
+	padding: 100px 0 0;
+	background-color: #62d2a2;
 }
 .overflowContainer {
 	overflow: hidden;
+	display: flex;
+	flex-direction: column;
 	height: 100%;
 	width: 100%;
 	box-sizing: border-box;
@@ -22,13 +22,30 @@
 	object-position: top;
 	transition: all 0.3s;
 	box-sizing: border-box;
-	width: 100%;
-	height: 100%;
+	min-width: 100%;
+	min-height: 100%;
 	cursor: pointer;
 }
-.overflowContainer img:hover {
-	transform: scale(1.1);
+.hover {
+	display: grid;
+	place-items: center;
+	height: 600px;
+	width: 100%;
+	background-color: #515151;
+	transform: translateY(-100%);
+	opacity: 0;
+	transition: 0.3s;
+	pointer-events: none;
 }
+.hover svg {
+	height: 100px;
+	width: 100px;
+	fill: white;
+}
+.overflowContainer:hover .hover {
+	opacity: 0.65;
+}
+
 .modal {
 	display: grid;
 	place-items: center;
@@ -42,28 +59,20 @@
 	z-index: 10000;
 }
 
-.modal button {
+.modal svg {
 	position: fixed;
 	top: 5vh;
 	right: 5vh;
-	font-size: 30px;
-	font-weight: bold;
-	padding: 10px;
+	height: 50px;
+	width: 50px;
 	border-radius: 5px;
-	border: 0;
 	background-color: #d7fbe8;
 	opacity: 0.9;
 	transition: 0.15s;
 }
-.modal button:focus {
-	outline: 0;
-	border: 0;
-}
-.modal button:active {
-	transform: scale(0.9) !important;
-}
-.modal button:hover {
+.modal svg:hover {
 	transform: scale(1.1);
+	cursor: pointer;
 }
 .modal img {
 	max-height: 90vh;
@@ -75,12 +84,32 @@
 		grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 		grid-auto-rows: 450px;
 	}
+	.hover {
+		height: 450px;
+	}
+}
+@media screen and (max-width: 1050px) {
+	.gallery {
+		padding: 0;
+	}
 }
 @media screen and (max-width: 540px) {
 	.gallery {
 		grid-template-columns: 1fr;
 		grid-auto-rows: 400px;
-		gap: 10px;
-		padding: 10px;
+	}
+	.hover {
+		height: 400px;
+	}
+}
+
+@media screen and (max-height: 600px) {
+	.gallery {
+		grid-auto-rows: 300px;
+	}
+}
+@media screen and (max-height: 400px) {
+	.gallery {
+		grid-auto-rows: 200px;
 	}
 }
