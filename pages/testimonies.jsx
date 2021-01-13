@@ -1,6 +1,6 @@
 import { useRef, useState, useEffect } from 'react';
 import Review from '../components/review';
-import { reviews } from '../infoJs/Reviews';
+import { reviews } from '../infoJs/reviews';
 import useWindowSize from '../hooks/useWindowSize';
 import Nav from '../components/nav';
 import Footer from '../components/footer';
