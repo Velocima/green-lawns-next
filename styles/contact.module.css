@@ -9,19 +9,20 @@
 	display: grid;
 	place-items: start;
 	width: 100%;
-	height: 60vh;
+	height: 50vh;
 	background-image: url(/images/contact/puppies.jpg);
 	background-repeat: no-repeat;
 	background-position: center -200px;
 	background-attachment: fixed;
-	background-size: 100vw;
+	background-size: cover;
 }
 
 .contactInfo {
 	display: grid;
 	place-items: center;
 	width: 100%;
-	height: 40vh;
+	height: 50vh;
+	min-height: 330px;
 	background-image: url('/images/dark-wallpaper.png');
 	background-repeat: repeat;
 	background-size: cover;
@@ -33,7 +34,6 @@
 	align-items: space-evenly;
 	color: black;
 	font-weight: 400;
-	font-size: 35px;
 	padding: 30px;
 	border-radius: 20px;
 	background-color: #fcbb46;
@@ -74,7 +74,7 @@
 	align-items: center;
 	justify-content: space-evenly;
 	flex-wrap: wrap;
-	height: 40vh;
+	min-height: 40vh;
 	width: 100%;
 	margin-top: -10px;
 	padding-top: 10px;
@@ -85,7 +85,7 @@
 
 .address {
 	width: 500px;
-	margin-bottom: 30px;
+	margin: 40px 0;
 	padding: 20px;
 	border-radius: 20px;
 	font-size: 20px;
@@ -95,7 +95,7 @@
 }
 .table {
 	width: 500px;
-	margin-bottom: 30px;
+	margin-top: 40px;
 	padding: 20px;
 	border-radius: 20px;
 	background-color: #d7fbe8b9;
@@ -118,4 +118,72 @@
 	font-size: 36px;
 	font-weight: 400;
 	padding: 10px;
+}
+
+@media screen and (max-width: 800px) {
+	.contactInfo div {
+		padding: 20px;
+	}
+	.contactInfo h1 {
+		font-size: 32px;
+	}
+	.contactInfo a {
+		font-size: 20px;
+	}
+
+	.table,
+	.address {
+		width: 450px;
+	}
+
+	.table th,
+	.address h2 {
+		font-size: 28px;
+	}
+}
+@media screen and (max-width: 550px) {
+	.contactInfo {
+		min-height: 250px;
+	}
+	.contactInfo div {
+		padding: 15px;
+	}
+	.contactInfo h1 {
+		font-size: 24px;
+	}
+	.contactInfo a {
+		font-size: 16px;
+	}
+	.contactInfo a:nth-child(4) {
+		text-align: center;
+	}
+	.contactInfo svg {
+		margin-right: 10px;
+		height: 20px;
+		width: 20px;
+	}
+
+	.table,
+	.address {
+		width: 95%;
+		margin: 20px 0;
+		padding: 10px;
+	}
+
+	.table th,
+	.address h2 {
+		font-size: 20px;
+	}
+
+	.address,
+	.table td {
+		font-size: 16px;
+		text-align: center;
+	}
+}
+
+@media screen and (max-height: 550px) {
+	.banner {
+		background-position: center -100px;
+	}
 }
