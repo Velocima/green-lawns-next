@@ -1,4 +1,155 @@
-.services {
+.main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-image: url('/images/dark-wallpaper.png');
+	background-repeat: repeat;
+	background-size: contain;
+}
+
+.paragraph {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	width: 100%;
+	margin-top: 200px;
+}
+
+.imageContainer {
+	width: 0;
+}
+.imageContainer img {
+	height: 350px;
+	width: 350px;
+	border-radius: 50%;
+	object-fit: cover;
+	object-position: 50% 30%;
+	transform: translateX(calc(25vw - 175px));
+	animation: fadeIn 1s 0.3s ease-out backwards;
+}
+
+.paragraph p {
+	width: 50vw;
+	min-height: 200px;
+	margin-left: 25vw;
+	padding: 30px;
+	padding-left: 205px;
+	border-radius: 20px;
+	font-size: 24px;
+	text-align: center;
+	vertical-align: text-bottom;
+	background-color: #d7fbe8b9;
+	box-shadow: 4px 6px 8px #13614d;
+	animation: fadeIn 1s ease-out backwards;
+}
+
+.info {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	justify-items: center;
+	align-items: start;
+	width: 100%;
+	margin-top: 100px;
+}
+
+.prices {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.prices h1,
+.importantInformation h1 {
+	font-size: 50px;
+	text-align: center;
+	text-shadow: 4px 5px 8px #13614d;
+	font-weight: 400;
+}
+.importantInformation h1 {
+	margin-bottom: 60px;
+}
+.prices h1 {
+	margin-top: 35px;
+	margin-bottom: 86px;
+}
+
+.tableContainer {
+	width: 35vw;
+	margin-bottom: 30px;
+	padding: 20px;
+	border-radius: 20px;
+	background-color: #d7fbe8b9;
+	box-shadow: 4px 6px 8px #13614d;
+}
+.svgContainer {
+	height: 20px;
+}
+.svgContainer svg {
+	position: relative;
+	height: 75px;
+	width: 75px;
+	top: -55px;
+	left: 30px;
+	fill: #13614d;
+	padding: 5px;
+	border-radius: 20px;
+	background-color: #fcbb46;
+}
+.tableContainer table {
+	width: 100%;
+	height: 100%;
+	border-collapse: collapse;
+}
+
+.tableContainer th,
+.doggyDaycare h2 {
+	font-size: 36px;
+	font-weight: 400;
+	padding: 10px;
+}
+
+.tableContainer td {
+	font-size: 20px;
+	padding: 5px;
+	border-bottom: 1px solid #13614d;
+}
+
+.doggyDaycare {
+	width: 35vw;
+	margin-bottom: 30px;
+	padding: 30px;
+	border-radius: 20px;
+	font-size: 20px;
+	text-align: center;
+	background-color: #d7fbe8b9;
+	box-shadow: 4px 6px 8px #13614d;
+}
+
+.importantInformation ul {
+	width: 35vw;
+	margin-bottom: 30px;
+	padding: 30px;
+	border-radius: 20px;
+	font-size: 20px;
+	text-align: center;
+	background-color: #d7fbe8b9;
+	box-shadow: 4px 6px 8px #13614d;
+	list-style-type: none;
+}
+.importantInformation li {
+	display: grid;
+	grid-template-columns: 30px 410px;
+	text-align: start;
+}
+.importantInformation ul svg {
+	height: 20px;
+	width: 20px;
+	margin-top: 5px;
+}
+
+/* .services {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: minmax(90vh, auto) minmax(100vh, auto);
@@ -539,4 +690,4 @@
 	to {
 		opacity: 1;
 	}
-}
+} */
