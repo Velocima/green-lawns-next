@@ -2,15 +2,13 @@ import React from 'react';
 
 export default function Review(props) {
 	return (
-		<div
-			className={props.className}
-			ref={props.reviewRef}
-			style={{
-				animationPlayState: props.animate ? 'running' : 'paused',
-				gridRowStart: props.gridRowStart,
-				gridRowEnd: props.gridRowStart + 1,
-			}}
-		>
+		<div className={props.className}>
+			<div>
+				<svg xmlns='http://www.w3.org/2000/svg' height='24' viewBox='0 0 24 24' width='24'>
+					<path d='M0 0h24v24H0z' fill='none' />
+					<path d='M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z' />
+				</svg>
+			</div>
 			<p>{props.review}</p>
 			<p>{` - ${props.author}`}</p>
 		</div>

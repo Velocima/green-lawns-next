@@ -11,26 +11,26 @@ export const reviews = [
 	},
 	{
 		review:
-			"We have been using Green Lawn Kennels for the past nine years and wouldn't go anywhere else. Our two labradors absolutely adore Julie who always treats them with great love and affection. A true home from home for our dogs.",
-		author: 'Jayne P',
-	},
-	{
-		review:
 			'Our dogs have holidayed at Green Lawns for many years now and always arrive excited to be there, proving it is a happy place for dogs! Julie’s love of all dogs shines through and is so very evident when ours enthusiastically greet Julie on arrival.  She treats each of our three dogs as an individual and caters for their separate needs in ways that are unexpected.  In fact we have learned much from her and often adapt our ways in light of her observations e.g. our old fella Drum likes to have his food raised up and then he is more likely to eat it.  Julie takes the time to work out how to make each of Drum’s visits good ones and we are grateful that she cares for Drum in such an empathic way.  Her passion for all animals is quite clear and there is no one better I would put my trust in when we need our dogs in a safe and caring environment while we go away. Thank you Julie! 😊',
 		author: 'Vicky',
 	},
 	{
-		review: `Our two dogs have been going to Julie for there holidays for a number of years. Our first dog Cooper is a teacup Yorkie and would stay with Nan when we went away but as Nan got older it became harder. I was really worried about Kennels for him because he had never been and he was now 6 years old and is very stubborn and very sensitive and can’t be let of his lead ever! I spoke to Julie over the phone and visited the Kennels and it felt a safe place to leave Cooper and we have not looked back he loves it, especially the walks around the field! 
-
-        Two years ago we got Woody our Cavalier he has had digestion problems from day one and I was really worried Julie wouldn’t take him but she is amazing with him and looks after him like her own, we go away knowing our boys are well looked after and loved by Julie and would be lost without her.
-        
-        Thank-you Greenlawns you are amazing. 
-        ⭐️⭐️⭐️⭐️⭐️`,
-		author: 'Becky B',
+		review:
+			"We have been using Green Lawn Kennels for the past nine years and wouldn't go anywhere else. Our two labradors absolutely adore Julie who always treats them with great love and affection. A true home from home for our dogs.",
+		author: 'Jayne P',
 	},
 	{
 		review: `We have been bringing our Cavalier King Charles spaniel to stay at Green Lawns Kennels since we moved to the area six years agp.I can highly recommend the care that Lola has received on her visits, she happily walks in without a backward glance and enjoys her holiday as much as we enjoy ours! She is now quite elderly and a little frail but we are completely confident leaving her at the Kennels as we know that Julie will take the utmost care of her.We highly recommend Green Lawns as an excellent home from home.`,
 		author: 'Debbie Tyrrell',
+	},
+	{
+		review: `Our two dogs have been going to Julie for there holidays for a number of years. Our first dog Cooper is a teacup Yorkie and would stay with Nan when we went away but as Nan got older it became harder. I was really worried about Kennels for him because he had never been and he was now 6 years old and is very stubborn and very sensitive and can’t be let of his lead ever! I spoke to Julie over the phone and visited the Kennels and it felt a safe place to leave Cooper and we have not looked back he loves it, especially the walks around the field! 
+
+		Two years ago we got Woody our Cavalier he has had digestion problems from day one and I was really worried Julie wouldn’t take him but she is amazing with him and looks after him like her own, we go away knowing our boys are well looked after and loved by Julie and would be lost without her.
+		
+		Thank-you Greenlawns you are amazing. 
+		⭐️⭐️⭐️⭐️⭐️`,
+		author: 'Becky B',
 	},
 	{
 		review: `I first visited Green Lawns Kennels 12 years ago.  I had viewed several kennels locally and after being shown around the kennels by Julie decided to book my black Labrador in for his first stay.   Well 12 years later and I am still using Green Lawns Kennels.  My dogs have always been excited when they arrive and look fit, healthy and happy when I have picked them up.   It’s a good feeling leaving my dog at Green Lawns as I know that he will be cared for the way I would want him to be.  I have no hesitation in recommending Green Lawns.   
