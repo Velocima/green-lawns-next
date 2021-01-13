@@ -98,7 +98,7 @@ export default function Contact() {
 						</table>
 					</div>
 					<div className={style.address}>
-						<h2>OUT ADDRESS</h2>
+						<h2>OUR ADDRESS</h2>
 						<p>
 							Green Lawns
 							<br />
@@ -108,6 +108,9 @@ export default function Contact() {
 							<br />
 							NP25 4BX
 						</p>
+						<div className={style.svgContainer}>
+							<img src='/images/contact/paw.png' alt='' />
+						</div>
 					</div>
 				</section>
 			</main>

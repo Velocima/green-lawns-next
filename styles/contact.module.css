@@ -34,30 +34,34 @@
 	align-items: space-evenly;
 	color: black;
 	font-weight: 400;
-	padding: 30px;
-	border-radius: 20px;
+	padding: 40px 50px;
+	border-radius: 30px;
 	background-color: #fcbb46;
 	box-shadow: 4px 6px 8px #13614d;
 	transition: 0.2s ease-out;
 }
 .contactInfo h1 {
 	padding-bottom: 10px;
-	font-size: 40px;
+	font-size: 53px;
 	font-weight: 400;
 	text-align: center;
+	text-shadow: 0px 3px 6px #515151;
 }
 
 .contactInfo a {
 	display: flex;
 	align-items: center;
 	padding: 5px 0;
-	font-size: 32px;
+	font-family: 'Segoe UI', sans-serif;
+	font-size: 35px;
+	font-weight: 400;
+	text-shadow: 0px 3px 6px #515151;
 	transition: 0.3s;
 }
 .contactInfo svg {
 	margin-right: 20px;
-	height: 35px;
-	width: 35px;
+	height: 45px;
+	width: 45px;
 }
 
 .contactInfo a:hover {
@@ -71,7 +75,7 @@
 
 .tables {
 	display: flex;
-	align-items: center;
+	align-items: flex-start;
 	justify-content: space-evenly;
 	flex-wrap: wrap;
 	min-height: 40vh;
@@ -85,19 +89,24 @@
 
 .address {
 	width: 500px;
-	margin: 40px 0;
+	margin: 40px 10px;
 	padding: 20px;
-	border-radius: 20px;
-	font-size: 20px;
+	border-radius: 30px;
+	font-size: 25px;
 	text-align: center;
 	background-color: #d7fbe8b9;
 	box-shadow: 4px 6px 8px #13614d;
 }
+.address p {
+	padding: 16px 0;
+	border-top: 1px solid #13614d;
+}
+
 .table {
 	width: 500px;
-	margin-top: 40px;
+	margin: 40px 10px 0;
 	padding: 20px;
-	border-radius: 20px;
+	border-radius: 30px;
 	background-color: #d7fbe8b9;
 	box-shadow: 4px 6px 8px #13614d;
 }
@@ -109,8 +118,11 @@
 
 .table td {
 	font-size: 20px;
-	padding: 5px;
+	padding: 20px 5px;
 	border-bottom: 1px solid #13614d;
+}
+.table td:nth-child(1) {
+	border-top: 1px solid #13614d;
 }
 
 .table th,
@@ -118,6 +130,19 @@
 	font-size: 36px;
 	font-weight: 400;
 	padding: 10px;
+}
+
+.svgContainer {
+	height: 0;
+	width: 0;
+}
+.svgContainer img {
+	height: 80px;
+	width: 80px;
+	position: relative;
+	left: 370px;
+	bottom: 95px;
+	transform: rotate(-20deg);
 }
 
 @media screen and (max-width: 800px) {
@@ -139,6 +164,9 @@
 	.table th,
 	.address h2 {
 		font-size: 28px;
+	}
+	.svgContainer img {
+		left: 320px;
 	}
 }
 @media screen and (max-width: 550px) {
@@ -179,6 +207,18 @@
 	.table td {
 		font-size: 16px;
 		text-align: center;
+	}
+	.svgContainer {
+		position: relative;
+		left: 10px;
+		bottom: 70px;
+	}
+	.svgContainer img {
+		transform: rotate(20deg);
+		height: 60px;
+		width: 60px;
+		left: 0;
+		bottom: 0;
 	}
 }
 
