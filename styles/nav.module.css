@@ -94,18 +94,7 @@
 		transition: 0.5s;
 	}
 	.logo {
-		position: fixed;
-		top: 3vh;
-		left: 3vh;
-		height: 39px;
-		width: 39px;
-		border-radius: 5px;
-		background-color: #ecfaf3d3;
-	}
-	.logo img {
-		height: 100%;
-		width: 100%;
-		margin: 0;
+		display: none;
 	}
 	.links {
 		flex-direction: column;
