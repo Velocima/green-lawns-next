@@ -25,12 +25,14 @@
 	border-radius: 50%;
 	object-fit: cover;
 	object-position: 50% 30%;
+	box-shadow: 4px 6px 8px #181818;
 	transform: translateX(calc(25vw - 175px));
 	animation: fadeIn 1s 0.3s ease-out backwards;
 }
 
 .paragraph p {
 	width: 50vw;
+	min-width: 800px;
 	min-height: 200px;
 	margin-left: 25vw;
 	padding: 30px;
@@ -38,7 +40,6 @@
 	border-radius: 20px;
 	font-size: 24px;
 	text-align: center;
-	vertical-align: text-bottom;
 	background-color: #d7fbe8b9;
 	box-shadow: 4px 6px 8px #13614d;
 	animation: fadeIn 1s ease-out backwards;
@@ -77,6 +78,7 @@
 
 .tableContainer {
 	width: 35vw;
+	min-width: 500px;
 	margin-bottom: 30px;
 	padding: 20px;
 	border-radius: 20px;
@@ -107,17 +109,18 @@
 .doggyDaycare h2 {
 	font-size: 36px;
 	font-weight: 400;
-	padding: 10px;
+	padding: 20px;
 }
 
 .tableContainer td {
 	font-size: 20px;
-	padding: 5px;
+	padding: 10px 5px;
 	border-bottom: 1px solid #13614d;
 }
 
 .doggyDaycare {
 	width: 35vw;
+	min-width: 500px;
 	margin-bottom: 30px;
 	padding: 30px;
 	border-radius: 20px;
@@ -127,8 +130,12 @@
 	box-shadow: 4px 6px 8px #13614d;
 }
 
+.doggyDaycare p {
+	padding: 0 0 10px;
+}
 .importantInformation ul {
 	width: 35vw;
+	min-width: 500px;
 	margin-bottom: 30px;
 	padding: 30px;
 	border-radius: 20px;
@@ -141,6 +148,7 @@
 .importantInformation li {
 	display: grid;
 	grid-template-columns: 30px 410px;
+	padding: 10px 0;
 	text-align: start;
 }
 .importantInformation ul svg {
@@ -149,516 +157,99 @@
 	margin-top: 5px;
 }
 
-/* .services {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: minmax(90vh, auto) minmax(100vh, auto);
-	margin-top: 10vh;
-}
-.services h1,
-.services h2,
-.services th,
-.services span {
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 300;
-	color: black;
-	opacity: 0.85;
-	text-shadow: 2px 2px 3px #1fab89;
-}
-.services p,
-.services td,
-.services li {
-	font-size: 1.15rem;
-}
-
-.ourServices {
-	grid-area: 1 / 1 / 2 / 3;
-	width: 100%;
-	min-height: 100%;
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	background-color: #d7fbe8;
-}
-
-.imageContainer {
-	display: grid;
-	place-items: center;
-	height: 100%;
-	width: 100%;
-	background: url('/images/doggo-background-texture-3.png');
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: 3%;
-	animation: fadeIn 1s ease-out backwards;
-}
-
-.imageContainer img {
-	height: 30vw;
-	width: 30vw;
-	border-radius: 50%;
-	object-fit: cover;
-	object-position: 50% 30%;
-	animation: fadeIn 1s 1.7s ease-out backwards;
-}
-
-.container {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: flex-start;
-	height: 100%;
-	width: 100%;
-	background-color: #9df3c4;
-}
-
-.overflowContainer {
-	margin-left: 5vw;
-	display: grid;
-	align-items: start;
-	overflow: hidden;
-}
-
-.overflowContainer h1 {
-	width: 90%;
-	font-size: 5vw;
-	margin-bottom: 7vh;
-	animation: fadeInFromAbove 1s 0.3s ease-out backwards;
-}
-.overflowContainer p {
-	width: 75%;
-	animation: fadeInFromLeft 1s 0.7s ease-out backwards;
-}
-
-.prices {
-	grid-area: 2 / 1 / 3 / 2;
-	display: grid;
-	place-items: center;
-	grid-template-rows: 10vh auto auto;
-	width: 100%;
-	height: 100%;
-	background-color: #9df3c4;
-}
-
-.prices h1 {
-	font-size: 3.5vw;
-	text-align: center;
-	animation: fadeIn 1s ease-out backwards;
-}
-.prices h2 {
-	font-size: 2vw;
-}
-.prices table {
-	align-self: start;
-	width: 500px;
-	margin: 20px 0;
-	padding: 0 20px 20px;
-	background: url('/images/doggo-background-texture-3.png');
-	background-repeat: no-repeat;
-	background-size: cover;
-	box-shadow: -7px 10px 10px #1fab89;
-	border-radius: 10px;
-	animation: fadeIn 1s ease-out backwards;
-}
-
-.prices .prices th {
-	font-size: 2rem;
-	font-weight: 400;
-	padding: 10px 0;
-}
-.prices td,
-.prices th {
-	border-bottom: 5px dotted #13614d;
-}
-.prices td {
-	padding: 5px 0;
-}
-.prices td:nth-child(2) {
-	text-align: center;
-}
-
-.prices p {
-	width: 500px;
-	margin: 20px 0;
-	padding: 20px 20px;
-	background: url('/images/doggo-background-texture-3.png');
-	background-repeat: no-repeat;
-	background-size: cover;
-	text-align: center;
-	box-shadow: -7px 10px 10px #1fab89;
-	border-radius: 10px;
-	animation: fadeIn 1s ease-out backwards;
-}
-
-.prices span {
-	display: block;
-	width: 100%;
-	font-size: 2rem;
-	font-weight: 400;
-	padding-bottom: 10px;
-}
-
-.importantInformation {
-	grid-area: 2 / 2 / 3 / 3;
-	display: grid;
-	place-items: center;
-	width: 100%;
-	height: 100%;
-	grid-template-rows: 10vh auto auto;
-	background: url('/images/doggo-background-texture-3.png');
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-.importantInformation h1 {
-	font-size: 3.5vw;
-	text-align: center;
-	animation: fadeIn 1s ease-out backwards;
-}
-.importantInformation ul {
-	box-sizing: border-box;
-	align-self: start;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-evenly;
-	width: 500px;
-	margin: 20px 0;
-	padding-right: 20px;
-	background-color: #d7fbe8;
-	border: 1px solid #9df3c4;
-	box-shadow: 7px 10px 10px #1fab89;
-	border-radius: 10px;
-	list-style-type: none;
-	animation: fadeIn 1s ease-out backwards;
-}
-.importantInformation li {
-	display: flex;
-	align-items: center;
-	margin-left: 25px;
-	margin-right: 5px;
-	padding: 10px 0;
-}
-.importantInformation img {
-	display: inline;
-	width: 40px;
-	height: 40px;
-	padding-right: 20px;
-}
-.importantInformation table {
-	width: 500px;
-	margin: 20px 0;
-	padding: 20px;
-	background-color: #d7fbe8;
-	border: 1px solid #9df3c4;
-	box-shadow: 7px 10px 10px #1fab89;
-	border-radius: 10px;
-	animation: fadeIn 1s ease-out backwards;
-}
-
-.importantInformation th {
-	font-size: 2rem;
-	font-weight: 400;
-}
-.importantInformation td,
-.importantInformation th {
-	border-bottom: 5px dotted #13614d;
-	border-right: none;
-	padding: 10px 0;
-}
-.importantInformation td:nth-child(2) {
-	text-align: center;
-}
-
-@media screen and (max-width: 1350px) {
-	.overflowContainer h1 {
-		margin-bottom: 20px;
-		font-size: 5rem;
+@media screen and (max-width: 1200px) {
+	.paragraph {
+		margin-top: 150px;
 	}
-	.overflowContainer p {
-		font-size: 1.125rem;
+	.imageContainer {
+		width: 0;
 	}
 	.imageContainer img {
-		height: 35vw;
-		width: 35vw;
+		height: 350px;
+		width: 350px;
+		transform: translateX(calc(23vw - 175px));
 	}
 
-	.prices {
-		grid-template-rows: 10vh auto auto;
+	.paragraph p {
+		width: 70vw;
+		min-width: 400px;
+		margin-left: 23vw;
+		padding: 30px;
+		padding-left: 205px;
+		text-align: center;
 	}
 
+	.info {
+		grid-template-columns: 1fr;
+		margin-top: 0;
+	}
+	.tableContainer,
+	.doggyDaycare,
+	.importantInformation ul {
+		width: 80vw;
+	}
 	.prices h1 {
-		font-weight: 400;
+		margin: 40px 0;
 	}
-	.prices table {
-		width: 75%;
-		margin: 20px 0;
-	}
-	.prices th {
-		font-size: 1.75rem;
-	}
-
-	.prices p {
-		width: 75%;
-		margin: 20px 0;
-	}
-	.prices span {
-		font-size: 1.75rem;
-	}
-
-	.importantInformation {
-		grid-template-rows: 10vh auto auto;
+	.doggyDaycare {
+		margin-bottom: 0;
 	}
 	.importantInformation h1 {
-		font-weight: 400;
-	}
-	.importantInformation ul {
-		width: 75%;
-		margin: 20px 0;
+		margin: 40px 0;
 	}
 	.importantInformation li {
-		margin-left: 15px;
+		grid-template-columns: 30px 100%;
 	}
-	.importantInformation img {
-		padding-right: 15px;
-	}
-
-	.importantInformation table {
-		width: 75%;
-		margin: 20px 0;
-	}
-	.importantInformation th {
-		font-size: 1.75rem;
+	.importantInformation li p {
+		padding: 0 20px;
 	}
 }
 
 @media screen and (max-width: 1050px) {
-	.overflowContainer h1 {
-		font-size: 3.4rem;
-		font-weight: 400;
-		width: 90%;
-	}
-	.overflowContainer p {
-		font-size: 1rem;
-		width: 85%;
-	}
-
 	.imageContainer img {
-		height: 40vw;
-		width: 40vw;
+		height: 300px;
+		width: 300px;
+		transform: translateX(20px);
 	}
 
-	.prices {
-		grid-template-rows: 100px auto auto;
-	}
-	.prices h1 {
-		font-size: 2.25rem;
-		font-weight: 400;
-	}
-	.prices table {
+	.paragraph p {
 		width: 85%;
-	}
-	.prices td {
-		font-size: 1rem;
-	}
-
-	.prices p {
-		width: 85%;
-		font-size: 1rem;
-	}
-
-	.importantInformation {
-		grid-template-rows: 100px auto auto;
-	}
-	.importantInformation h1 {
-		font-size: 2.25rem;
-		font-weight: 400;
-	}
-	.importantInformation ul {
-		width: 85%;
-	}
-	.importantInformation li {
-		margin-left: 10px;
-	}
-	.importantInformation P {
-		font-size: 1rem;
-	}
-	.importantInformation img {
-		padding-right: 10px;
-		width: 25px;
-		height: 25px;
-	}
-
-	.importantInformation table {
-		width: 85%;
-	}
-	.importantInformation td {
-		font-size: 1rem;
-	}
-}
-@media screen and (max-width: 700px) {
-	.services {
-		grid-template-rows: repeat(3, minmax(50vh, auto));
-		grid-template-columns: 100%;
-	}
-	.ourServices {
-		grid-template-rows: minmax(30vh, auto) minmax(40vh, auto);
-		grid-template-columns: 100%;
-	}
-
-	.container {
-		display: grid;
-		place-items: center;
-	}
-	.overflowContainer {
-		place-items: center;
-		width: 80%;
-		margin: 0;
-	}
-	.overflowContainer h1,
-	.overflowContainer p {
-		width: auto;
+		min-height: 100px;
+		margin-left: 10%;
+		padding: 20px;
+		padding-left: calc(10vw + 150px);
+		font-size: 24px;
 		text-align: center;
-		margin-bottom: 15px;
 	}
-
+}
+@media screen and (max-width: 900px) {
+	.main {
+		overflow-x: hidden;
+	}
+	.paragraph {
+		flex-direction: column;
+		margin-top: 28vw;
+	}
+	.paragraph p {
+		font-size: 20px;
+	}
 	.imageContainer {
-		grid-area: 2 / 1 / 3 / 3;
+		height: 0;
 	}
-
 	.imageContainer img {
-		height: 35vh;
-		width: 35vh;
+		height: 50vw;
+		width: 50vw;
+		position: relative;
+		right: 25vw;
+		bottom: 25vw;
+		transform: none;
 	}
-
-	.prices {
-		grid-area: 2 / 1 / 3 / 3;
-	}
-
-	.prices h1 {
-		font-size: 3rem;
-	}
-	.prices table {
-		width: 80%;
-	}
-
-	.prices th {
-		font-size: 1.5rem;
-	}
-
-	.prices p {
-		width: 80%;
-		margin-bottom: 40px;
-	}
-	.prices span {
-		font-size: 1.5rem;
-	}
-
-	.importantInformation {
-		grid-area: 3 / 1 / 4 / 3;
-	}
-	.importantInformation h1 {
-		font-size: 3rem;
-	}
-	.importantInformation ul {
-		width: 80%;
-	}
-	.importantInformation table {
-		width: 80%;
-		margin-bottom: 40px;
-	}
-	.importantInformation th {
-		font-size: 1.5rem;
+	.paragraph p {
+		margin: 0;
+		padding: 28vw 30px 30px;
+		width: 70%;
 	}
 }
-@media screen and (min-width: 2500px) {
-	.overflowContainer h1 {
-		font-size: 8rem;
-	}
-	.overflowContainer p {
-		font-size: 1.875rem;
-	}
-
-	.prices table {
-		width: 750px;
-	}
-	.prices th {
-		font-size: 3rem;
-	}
-	.prices td {
-		font-size: 1.75rem;
-	}
-	.prices p {
-		width: 750px;
-		font-size: 1.75rem;
-	}
-	.prices span {
-		font-size: 3rem;
-	}
-	.importantInformation ul {
-		width: 750px;
-	}
-	.importantInformation p {
-		font-size: 1.75rem;
-	}
-	.importantInformation img {
-		width: 50px;
-		height: 50px;
-	}
-	.importantInformation table {
-		width: 750px;
-	}
-	.importantInformation th {
-		font-size: 3rem;
-	}
-	.importantInformation td {
-		font-size: 1.75rem;
-	}
-}
-@media screen and (min-width: 3700px) {
-	.overflowContainer h1 {
-		font-size: 10rem;
-	}
-	.overflowContainer p {
-		font-size: 2.5rem;
-	}
-
-	.prices table {
-		width: 1000px;
-	}
-	.prices th {
-		font-size: 4rem;
-	}
-	.prices td {
-		font-size: 2.5rem;
-	}
-
-	.prices p {
-		width: 1000px;
-		font-size: 2.5rem;
-	}
-	.prices span {
-		font-size: 4rem;
-	}
-	.importantInformation ul {
-		width: 1000px;
-	}
-	.importantInformation p {
-		font-size: 2.5rem;
-	}
-	.importantInformation img {
-		width: 60px;
-		height: 60px;
-	}
-	.importantInformation table {
-		width: 1000px;
-	}
-	.importantInformation th {
-		font-size: 4rem;
-	}
-	.importantInformation td {
-		font-size: 2.5rem;
-	}
-}
-
 @keyframes fadeIn {
 	from {
 		opacity: 0;
@@ -667,27 +258,3 @@
 		opacity: 1;
 	}
 }
-@keyframes fadeInFromLeft {
-	from {
-		opacity: 0;
-		transform: translateX(-200%);
-	}
-	80% {
-		opacity: 0.7;
-	}
-	to {
-		opacity: 1;
-	}
-}
-@keyframes fadeInFromAbove {
-	from {
-		opacity: 0;
-		transform: translateY(-120%);
-	}
-	80% {
-		opacity: 0.7;
-	}
-	to {
-		opacity: 1;
-	}
-} */

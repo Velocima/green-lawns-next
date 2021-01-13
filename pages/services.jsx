@@ -89,7 +89,6 @@ export default function Services() {
 						<div className={style.doggyDaycare}>
 							<h2>DOGGY DAY CARE</h2>
 							<p>
-								<span>Doggy Day Care</span>
 								Monday-Friday, 8:30a.m - 5:30pm
 								<br />
 								1 x dog - £14 per day
