@@ -1,8 +1,15 @@
-import React from 'react';
+import { useRef } from 'react';
+import useAnimationPlaystate from '../hooks/useAnimationPlaystate';
 
 export default function Review(props) {
+	const reviewRef = useRef(null);
+	const reviewPlaystate = useAnimationPlaystate(reviewRef);
 	return (
-		<div className={props.className}>
+		<div
+			className={props.className}
+			ref={reviewRef}
+			style={{ animationPlayState: reviewPlaystate }}
+		>
 			<div>
 				<svg xmlns='http://www.w3.org/2000/svg' height='24' viewBox='0 0 24 24' width='24'>
 					<path d='M0 0h24v24H0z' fill='none' />
