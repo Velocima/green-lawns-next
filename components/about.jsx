@@ -58,9 +58,9 @@ export default function About() {
 					onMouseEnter={handleMouseEnter}
 					onMouseLeave={handleMouseLeave}
 				>
-					<img src='/images/about/hope.png' alt='' style={imageOneStyle} />
-					<img src='/images/about/julie.png' alt='' style={imageTwoStyle} />
-					<img src='/images/about/ted.png' alt='' style={imageThreeStyle} />
+					<img src='/images/about/hope.jpg' alt='' style={imageOneStyle} />
+					<img src='/images/about/julie.jpg' alt='' style={imageTwoStyle} />
+					<img src='/images/about/ted.jpg' alt='' style={imageThreeStyle} />
 				</div>
 				<p ref={familyTextRef} style={{ animationPlayState: familyTextPlayState }}>
 					We are a highly reputable and established boarding kennels offering first class
@@ -92,13 +92,13 @@ export default function About() {
 						</p>
 					</div>
 					<img
-						src='/images/about/dog-placeholder-1.jpg'
+						src='/images/about/tile-one.jpg'
 						alt=''
 						ref={tileTwoRef}
 						style={{ animationPlayState: tileTwoPlayState }}
 					/>
 					<img
-						src='/images/about/dog-placeholder-3.jpg'
+						src='/images/about/tile-three.jpg'
 						alt=''
 						ref={tileThreeRef}
 						style={{ animationPlayState: tileThreePlayState }}
@@ -133,7 +133,7 @@ export default function About() {
 						</p>
 					</div>
 					<img
-						src='/images/about/dog-placeholder-2.jpg'
+						src='/images/about/tile-two.jpg'
 						alt=''
 						ref={tileSixRef}
 						style={{ animationPlayState: tileSixPlayState }}

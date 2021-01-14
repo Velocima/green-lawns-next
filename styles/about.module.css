@@ -103,6 +103,10 @@
 	animation: fadeIn 1s ease-out backwards;
 }
 
+.tiles img:nth-child(6) {
+	object-position: top;
+}
+
 @media screen and (max-width: 1300px) {
 	.imageContainer {
 		margin-top: 30px;
