@@ -15,6 +15,7 @@ export default function Testimonials() {
 				<link rel='icon' href='/images/favicon.png' />
 			</Head>
 			<Nav />
+			<div className={style.banner}></div>
 			<main className={style.reviews}>
 				{reviews.map((review, i) => (
 					<Review
