@@ -12,6 +12,7 @@ export default function GalleryImage({ image, alt, onClick, index }) {
 			key={index}
 			ref={imageRef}
 			style={{ animationPlayState: imagePlaystate }}
+			key={index}
 		>
 			<img src={image} alt={alt} onClick={onClick} />
 			<div className={style.hover}>

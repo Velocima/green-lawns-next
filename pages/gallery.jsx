@@ -39,6 +39,7 @@ export default function Gallery(props) {
 						alt={image.alt}
 						index={i}
 						onClick={handleImageClick}
+						key={i}
 					/>
 				))}
 				<div
