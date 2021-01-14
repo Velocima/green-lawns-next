@@ -1,12 +1,23 @@
 import Head from 'next/head';
-import { useRef, useState, useEffect } from 'react';
+import { useRef } from 'react';
 import useWindowSize from '../hooks/useWindowSize';
+import useAnimationPlaystate from '../hooks/useAnimationPlaystate';
 import Nav from '../components/nav';
 import Footer from '../components/footer';
 import style from '../styles/contact.module.css';
 
 export default function Contact() {
 	const [width, height] = useWindowSize();
+
+	const iframeRef = useRef(null),
+		tablesRef = useRef(null),
+		tableRef = useRef(null),
+		addressRef = useRef(null);
+	const iframePlaystate = useAnimationPlaystate(iframeRef),
+		tablesPlaystate = useAnimationPlaystate(tablesRef),
+		tablePlaystate = useAnimationPlaystate(tableRef),
+		addressPlaystate = useAnimationPlaystate(addressRef);
+
 	return (
 		<>
 			<Head>
@@ -74,9 +85,19 @@ export default function Contact() {
 					aria-hidden='false'
 					tabIndex='0'
 					title='Google maps'
+					ref={iframeRef}
+					style={{ animationPlayState: iframePlaystate }}
 				></iframe>
-				<section className={style.tables}>
-					<div className={style.table}>
+				<section
+					className={style.tables}
+					ref={tablesRef}
+					style={{ animationPlayState: tablesPlaystate }}
+				>
+					<div
+						className={style.table}
+						ref={tableRef}
+						style={{ animationPlayState: tablePlaystate }}
+					>
 						<table>
 							<tbody>
 								<tr>
@@ -97,7 +118,11 @@ export default function Contact() {
 							</tbody>
 						</table>
 					</div>
-					<div className={style.address}>
+					<div
+						className={style.address}
+						ref={addressRef}
+						style={{ animationPlayState: addressPlaystate }}
+					>
 						<h2>OUR ADDRESS</h2>
 						<p>
 							Green Lawns

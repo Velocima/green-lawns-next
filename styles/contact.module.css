@@ -15,6 +15,7 @@
 	background-position: center -200px;
 	background-attachment: fixed;
 	background-size: cover;
+	animation: fadeIn 0.5s ease-out backwards;
 }
 
 .contactInfo {
@@ -26,6 +27,7 @@
 	background-image: url('/images/dark-wallpaper.png');
 	background-repeat: repeat;
 	background-size: cover;
+	animation: fadeIn 0.5s 0.2s ease-out backwards;
 }
 .contactInfo div {
 	display: flex;
@@ -39,6 +41,7 @@
 	background-color: #fcbb46;
 	box-shadow: 4px 6px 8px #13614d;
 	transition: 0.2s ease-out;
+	animation: fadeIn 0.5s 0.3s ease-out backwards;
 }
 .contactInfo h1 {
 	padding-bottom: 10px;
@@ -46,6 +49,7 @@
 	font-weight: 400;
 	text-align: center;
 	text-shadow: 0px 3px 6px #515151;
+	animation: fadeIn 0.5s 0.4s ease-out backwards;
 }
 
 .contactInfo a {
@@ -58,6 +62,16 @@
 	text-shadow: 0px 3px 6px #515151;
 	transition: 0.3s;
 }
+.contactInfo a:nth-child(2) {
+	animation: fadeIn 0.5s 0.5s ease-out backwards;
+}
+.contactInfo a:nth-child(3) {
+	animation: fadeIn 0.5s 0.6s ease-out backwards;
+}
+.contactInfo a:nth-child(4) {
+	animation: fadeIn 0.5s 0.7s ease-out backwards;
+}
+
 .contactInfo svg {
 	margin-right: 20px;
 	height: 45px;
@@ -71,6 +85,7 @@
 	width: 100%;
 	height: 50vh;
 	z-index: 20;
+	animation: fadeIn 0.5s ease-out backwards;
 }
 
 .tables {
@@ -85,6 +100,7 @@
 	background-image: url('/images/dark-wallpaper.png');
 	background-repeat: repeat;
 	background-size: cover;
+	animation: fadeIn 0.5s ease-out backwards;
 }
 
 .address {
@@ -96,6 +112,7 @@
 	text-align: center;
 	background-color: #d7fbe8b9;
 	box-shadow: 4px 6px 8px #13614d;
+	animation: fadeIn 0.5s ease-out backwards;
 }
 .address p {
 	padding: 16px 0;
@@ -109,6 +126,7 @@
 	border-radius: 30px;
 	background-color: #d7fbe8b9;
 	box-shadow: 4px 6px 8px #13614d;
+	animation: fadeIn 0.5s ease-out backwards;
 }
 .table table {
 	width: 100%;
@@ -225,5 +243,14 @@
 @media screen and (max-height: 550px) {
 	.banner {
 		background-position: center -100px;
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
 	}
 }
