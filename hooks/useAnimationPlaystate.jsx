@@ -15,6 +15,7 @@ export default function useAnimationPlaystate(elementRef) {
 				setPlayState('running');
 			}
 		};
+		onScroll();
 
 		window.addEventListener('scroll', onScroll);
 		return () => window.removeEventListener('scroll', onScroll);

@@ -18,6 +18,7 @@
 
 .imageContainer {
 	width: 0;
+	z-index: 20;
 }
 .imageContainer img {
 	height: 350px;
@@ -27,7 +28,7 @@
 	object-position: 50% 30%;
 	box-shadow: 4px 6px 8px #181818;
 	transform: translateX(calc(25vw - 175px));
-	animation: fadeIn 1s 0.3s ease-out backwards;
+	animation: fadeIn 0.5s ease-out backwards;
 }
 
 .paragraph p {
@@ -42,7 +43,7 @@
 	text-align: center;
 	background-color: #d7fbe8b9;
 	box-shadow: 4px 6px 8px #13614d;
-	animation: fadeIn 1s ease-out backwards;
+	animation: fadeIn 0.5s 0.3s ease-out backwards;
 }
 
 .info {
@@ -67,6 +68,7 @@
 	text-align: center;
 	text-shadow: 4px 5px 8px #13614d;
 	font-weight: 400;
+	animation: fadeIn 0.5s ease-out backwards;
 }
 .importantInformation h1 {
 	margin-bottom: 60px;
@@ -84,6 +86,7 @@
 	border-radius: 20px;
 	background-color: #d7fbe8b9;
 	box-shadow: 4px 6px 8px #13614d;
+	animation: fadeIn 0.5s ease-out backwards;
 }
 .svgContainer {
 	height: 20px;
@@ -98,6 +101,7 @@
 	padding: 5px;
 	border-radius: 20px;
 	background-color: #fcbb46;
+	animation: fadeIn 0.5s ease-out backwards;
 }
 .tableContainer table {
 	width: 100%;
@@ -130,6 +134,7 @@
 	text-align: center;
 	background-color: #d7fbe8b9;
 	box-shadow: 4px 6px 8px #13614d;
+	animation: fadeIn 0.5s ease-out backwards;
 }
 
 .doggyDaycare p {
@@ -146,6 +151,7 @@
 	background-color: #d7fbe8b9;
 	box-shadow: 4px 6px 8px #13614d;
 	list-style-type: none;
+	animation: fadeIn 0.5s ease-out backwards;
 }
 .importantInformation li {
 	display: grid;

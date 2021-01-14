@@ -6,6 +6,23 @@ import Footer from '../components/footer';
 import style from '../styles/services.module.css';
 
 export default function Services() {
+	const pricesTitleRef = useRef(null),
+		infoTitleRef = useRef(null),
+		pricesSVGRef = useRef(null),
+		infoSVGRef = useRef(null),
+		pricesTableRef = useRef(null),
+		doggyDaycareRef = useRef(null),
+		infoTableRef = useRef(null),
+		infoListRef = useRef(null);
+
+	const pricesTitlePlaystate = useAnimationPlaystate(pricesTitleRef),
+		infoTitlePlaystate = useAnimationPlaystate(infoTitleRef),
+		pricesSVGPlaystate = useAnimationPlaystate(pricesSVGRef),
+		infoSVGPlaystate = useAnimationPlaystate(infoSVGRef),
+		pricesTablePlaystate = useAnimationPlaystate(pricesTableRef),
+		doggyDaycarePlaystate = useAnimationPlaystate(doggyDaycareRef),
+		infoTablePlaystate = useAnimationPlaystate(infoTableRef),
+		infoListPlaystate = useAnimationPlaystate(infoListRef);
 	return (
 		<>
 			<Head>
@@ -30,14 +47,25 @@ export default function Services() {
 				</div>
 				<div className={style.info}>
 					<section className={style.prices}>
-						<h1>PRICES</h1>
-						<div className={style.tableContainer}>
+						<h1
+							ref={pricesTitleRef}
+							style={{ animationPlayState: pricesTitlePlaystate }}
+						>
+							PRICES
+						</h1>
+						<div
+							className={style.tableContainer}
+							ref={pricesTableRef}
+							style={{ animationPlayState: pricesTablePlaystate }}
+						>
 							<div className={style.svgContainer}>
 								<svg
 									xmlns='http://www.w3.org/2000/svg'
 									height='24'
 									viewBox='0 0 24 24'
 									width='24'
+									ref={pricesSVGRef}
+									style={{ animationPlayState: pricesSVGPlaystate }}
 								>
 									<path d='M0 0h24v24H0z' fill='none' />
 									<path d='M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm-2 14l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z' />
@@ -86,7 +114,11 @@ export default function Services() {
 								</tbody>
 							</table>
 						</div>
-						<div className={style.doggyDaycare}>
+						<div
+							className={style.doggyDaycare}
+							ref={doggyDaycareRef}
+							style={{ animationPlayState: doggyDaycarePlaystate }}
+						>
 							<h2>DOGGY DAY CARE</h2>
 							<p>
 								Monday-Friday, 8:30a.m - 5:30pm
@@ -100,13 +132,21 @@ export default function Services() {
 						</div>
 					</section>
 					<section className={style.importantInformation}>
-						<h1>
+						<h1 ref={infoTitleRef} style={{ animationPlayState: infoTitlePlaystate }}>
 							IMPORTANT
 							<br />
 							INFORMATION
 						</h1>
-						<div className={style.tableContainer}>
-							<div className={style.svgContainer}>
+						<div
+							className={style.tableContainer}
+							ref={infoTableRef}
+							style={{ animationPlayState: infoTablePlaystate }}
+						>
+							<div
+								className={style.svgContainer}
+								ref={infoSVGRef}
+								style={{ animationPlayState: infoSVGPlaystate }}
+							>
 								<svg
 									xmlns='http://www.w3.org/2000/svg'
 									height='24'
@@ -137,7 +177,7 @@ export default function Services() {
 								</tbody>
 							</table>
 						</div>
-						<ul>
+						<ul ref={infoListRef} style={{ animationPlayState: infoListPlaystate }}>
 							<li>
 								<svg
 									xmlns='http://www.w3.org/2000/svg'
