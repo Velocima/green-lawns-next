@@ -338,6 +338,175 @@
 		padding: 15px;
 	}
 }
+@media screen and (min-width: 2500px) {
+	.paragraph {
+		margin-top: 210px;
+	}
+	.imageContainer img {
+		height: 500px;
+		width: 500px;
+		transform: translateX(calc(25vw - 250px));
+	}
+	.paragraph p {
+		min-width: 1100px;
+		min-height: 280px;
+		padding: 40px;
+		padding-left: 295px;
+		border-radius: 28px;
+		font-size: 34px;
+	}
+	.info {
+		margin-top: 70px;
+	}
+	.prices h1,
+	.importantInformation h1 {
+		font-size: 70px;
+	}
+	.importantInformation h1 {
+		margin-bottom: 80px;
+	}
+	.prices h1 {
+		margin-top: 45px;
+		margin-bottom: 121px;
+	}
+	.tableContainer {
+		min-width: 700px;
+		margin-bottom: 40px;
+		padding: 28px;
+		border-radius: 28px;
+	}
+	.svgContainer {
+		height: 28px;
+	}
+	.svgContainer svg {
+		height: 105px;
+		width: 105px;
+		top: -80px;
+		left: 40px;
+		padding: 7px;
+		border-radius: 28px;
+	}
+	.tableContainer th,
+	.doggyDaycare h2 {
+		font-size: 41px;
+		padding: 28px;
+	}
+	.tableContainer td {
+		padding: 14px 7px;
+		font-size: 28px;
+	}
+	.doggyDaycare {
+		min-width: 700px;
+		margin-bottom: 40px;
+		padding: 40px;
+		border-radius: 28px;
+		font-size: 28px;
+	}
+	.doggyDaycare p {
+		padding: 0 0 14px;
+	}
+	.importantInformation ul {
+		min-width: 700px;
+		margin-bottom: 40px;
+		padding: 40px;
+		border-radius: 28px;
+		font-size: 28px;
+	}
+	.importantInformation li {
+		grid-template-columns: 40px 95%;
+		padding: 14px 0;
+	}
+	.importantInformation ul svg {
+		height: 28px;
+		width: 28px;
+		margin-top: 7px;
+	}
+}
+@media screen and (min-width: 3700px) {
+	.paragraph {
+		margin-top: 300px;
+	}
+	.imageContainer img {
+		height: 700px;
+		width: 700px;
+		transform: translateX(calc(25vw - 350px));
+	}
+	.paragraph p {
+		min-width: 1600px;
+		min-height: 400px;
+		padding: 60px;
+		padding-left: 410px;
+		border-radius: 40px;
+		font-size: 48px;
+	}
+	.info {
+		margin-top: 100px;
+	}
+	.prices h1,
+	.importantInformation h1 {
+		font-size: 100px;
+	}
+	.importantInformation h1 {
+		margin-bottom: 120px;
+	}
+	.prices h1 {
+		margin-top: 70px;
+		margin-bottom: 172px;
+	}
+	.tableContainer {
+		min-width: 1000px;
+		margin-bottom: 60px;
+		padding: 40px;
+		border-radius: 40px;
+	}
+	.svgContainer {
+		height: 40px;
+	}
+	.svgContainer svg {
+		height: 150px;
+		width: 150px;
+		top: -110px;
+		left: 60px;
+		padding: 10px;
+		border-radius: 40px;
+	}
+	.tableContainer th,
+	.doggyDaycare h2 {
+		font-size: 72px;
+		padding: 40px;
+	}
+	.tableContainer td {
+		padding: 20px 10px;
+		font-size: 40px;
+	}
+	.doggyDaycare {
+		min-width: 1000px;
+		margin-bottom: 60px;
+		padding: 60px;
+		border-radius: 40px;
+		font-size: 40px;
+	}
+	.doggyDaycare p {
+		padding: 0 0 20px;
+	}
+	.importantInformation ul {
+		min-width: 1000px;
+		margin-bottom: 60px;
+		padding: 60px;
+		border-radius: 40px;
+		font-size: 40px;
+	}
+	.importantInformation li {
+		grid-template-columns: 60px 95%;
+		padding: 20px 0;
+	}
+	.importantInformation ul svg {
+		height: 40px;
+		width: 40px;
+		margin-top: 10px;
+	}
+}
+
 @keyframes fadeIn {
 	from {
 		opacity: 0;
