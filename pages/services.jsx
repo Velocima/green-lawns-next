@@ -26,7 +26,7 @@ export default function Services() {
 	return (
 		<>
 			<Head>
-				<title>Sevices | Green Lawns Boarding Kennels</title>
+				<title>Sevices / Pricing | Green Lawns Boarding Kennels</title>
 				<link rel='icon' href='/images/favicon.png' />
 			</Head>
 			<Nav />

@@ -4,6 +4,7 @@ import { galleryImages } from '../infoJs/galleryImages';
 import Nav from '../components/nav';
 import Footer from '../components/footer';
 import GalleryImage from '../components/galleryImage';
+import Head from 'next/head';
 
 export default function Gallery(props) {
 	const [isModalOpen, setIsModalOpen] = useState(false);
@@ -35,6 +36,10 @@ export default function Gallery(props) {
 	};
 	return (
 		<>
+			<Head>
+				<title>Gallery | Green Lawns Boarding Kennels</title>
+				<link rel='icon' href='/images/favicon.png' />
+			</Head>
 			<Nav />
 			<section className={style.gallery}>
 				{galleryImages.map((image, i) => (
