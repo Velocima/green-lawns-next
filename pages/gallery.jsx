@@ -28,7 +28,11 @@ export default function Gallery(props) {
 			window.removeEventListener('keydown', handleEscape);
 		};
 	}, [isModalOpen]);
-
+	const handleModalWhiteSpaceClick = ({ target }) => {
+		if (target.nodeName === 'DIV') {
+			setIsModalOpen(false);
+		}
+	};
 	return (
 		<>
 			<Nav />
@@ -48,6 +52,8 @@ export default function Gallery(props) {
 						opacity: isModalOpen ? '1' : '0',
 						pointerEvents: isModalOpen ? 'all' : 'none',
 					}}
+					id='modal'
+					onClick={handleModalWhiteSpaceClick}
 				>
 					<svg
 						onClick={closeModal}
