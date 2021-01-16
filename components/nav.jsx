@@ -19,7 +19,7 @@ export default function Nav(props) {
 
 	const topLineStyle = {
 		transform: !showNav ? 'none' : 'rotate(-405deg)',
-		top: showNav ? '10px' : 0,
+		top: showNav ? '11px' : 0,
 	};
 	const middleLineStyle = { transform: !showNav ? 'none' : 'rotate(405deg)' };
 	const bottomLineStyle = {
