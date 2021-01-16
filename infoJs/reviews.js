@@ -1,12 +1,12 @@
 export const reviews = [
 	{
 		review:
-			'After many years of dog ownership I can honestly say Green Lawns is the best kennels I have ever used. Julie really cares for and understands her ‘charges’ and the kennels themselves are spotless. The dogs always settle quickly into their routine with regular exercise and expansive, safe fields to run in. Julie is happy to walk them individually or match up with suitable companions. From the moment of arrival in the car park mine never give me a backwards look - I wholeheartedly recommend',
+			'After many years of dog ownership I can honestly say Green Lawns is the best kennels I have ever used. Julie really cares for and understands her ‘charges’ and the kennels themselves are spotless. The dogs always settle quickly into their routine with regular exercise and expansive, safe fields to run in. Julie is happy to walk them individually or match up with suitable companions. From the moment of arrival in the car park mine never give me a backwards look - I wholeheartedly recommend.',
 		author: 'Annie H',
 	},
 	{
 		review:
-			'For the last 4 years, our 2 Labradoodles have frequently been staying at Green Lawn Kennels.  Their first stay was when they were 6 months old!  Stays at Green Lawns are now referred to by the kids as ‘going to holiday camp’ because the dogs have such a great time and are very spoilt with walks, attention and treats.  Both dogs adore Julie and whine like crazy as we near the kennels as they can’t wait to see her! They are always welcomed with a run in a field and lots of attention. And we leave them knowing they are very happy and well cared for. We can’t recommend Julie and her kennels highly enough',
+			'For the last 4 years, our 2 Labradoodles have frequently been staying at Green Lawn Kennels.  Their first stay was when they were 6 months old!  Stays at Green Lawns are now referred to by the kids as ‘going to holiday camp’ because the dogs have such a great time and are very spoilt with walks, attention and treats.  Both dogs adore Julie and whine like crazy as we near the kennels as they can’t wait to see her! They are always welcomed with a run in a field and lots of attention. And we leave them knowing they are very happy and well cared for. We can’t recommend Julie and her kennels highly enough.',
 		author: 'Claudia N',
 	},
 	{
