@@ -9,23 +9,28 @@
 	min-height: 70px;
 	z-index: 100;
 	opacity: 0.98;
+	background-color: #9df3c4;
 }
 
 .logo {
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
-	flex-grow: 1;
 	width: auto;
 	height: 100%;
-	background-color: #9df3c4;
 }
 
 .logo img {
-	max-height: 90%;
+	max-height: 95%;
 	margin-left: 20px;
+	padding: 5px;
+	border-radius: 10px;
+	background-color: #13614d00;
+	transition: 0.3s;
 }
-
+.logo img:hover {
+	background-color: #1fab88da;
+}
 .navButton {
 	display: none;
 }
@@ -44,6 +49,17 @@
 	min-width: 185px;
 	font-size: 20px;
 	text-align: center;
+	transition: 0.3s;
+}
+.links li a {
+	text-decoration: underline;
+	text-decoration-color: #d7fbe800;
+	text-underline-offset: 2px;
+	text-decoration-thickness: 1px;
+	transition: 0.3s;
+}
+.links li a:hover {
+	text-decoration-color: #121212;
 }
 
 .links li:nth-child(1) {

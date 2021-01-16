@@ -70,7 +70,21 @@ export default function Nav(props) {
 						}}
 					>
 						<Link href={page.route} onClick={handleNavButtonClick}>
-							<a onClick={handleNavButtonClick}>{page.navText}</a>
+							<a
+								onClick={handleNavButtonClick}
+								style={
+									width <= 1050
+										? {
+												textDecorationColor:
+													page.route === pathname
+														? '#121212'
+														: '#d7fbe800',
+										  }
+										: {}
+								}
+							>
+								{page.navText}
+							</a>
 						</Link>
 					</li>
 				))}
