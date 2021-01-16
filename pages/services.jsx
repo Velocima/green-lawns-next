@@ -34,7 +34,7 @@ export default function Services() {
 				<div className={style.paragraph}>
 					<div className={style.imageContainer}>
 						<img
-							src='/images/good-boy.jpg'
+							src='/images/services/good-boy.jpg'
 							alt='Ted is one of the families very happy dogs.'
 						/>
 					</div>
