@@ -72,7 +72,7 @@ export default function About() {
 					<br />
 					We pride ourselves in caring for each guest as an individual, paying detailed
 					attention to their specific needs. Specialising in caring for anxious or nervous
-					dogs, we understand and provide the necessary extra time they need to become
+					dogs, we understand and provide the necessary time they need to become
 					comfortable with us and to make friends at their own pace. All our guests get
 					the chance to play in our lovely paddocks three times a day where they can
 					exercise and socialise with other dogs or individually if you’d prefer.
