@@ -7,8 +7,17 @@ body {
 }
 
 a {
-	color: inherit;
 	text-decoration: none;
+}
+
+td,
+p,
+li,
+a,
+th,
+h1,
+h2 {
+	color: #121212;
 }
 
 * {
