@@ -1,23 +1,23 @@
+.banner {
+	background-image: url('/images/testimonies/banner.jpg');
+	background-position: 40% top;
+	background-size: cover;
+	background-attachment: fixed;
+	width: 100%;
+	height: 65vh;
+}
 .reviews {
 	display: grid;
 	grid-auto-rows: minmax(10vh, auto);
 	grid-template-columns: 1fr 1fr;
 	place-items: center;
 	width: 100%;
-	padding: 150px 100px 100px;
+	padding: 70px 100px 100px;
 	gap: 70px;
 	place-items: center;
 	background-image: url('/images/dark-wallpaper.png');
 	background-repeat: repeat;
 	background-size: contain;
-}
-.banner {
-	background-image: url('/images/testimonies/banner.jpg');
-	background-position: center -300px;
-	background-size: cover;
-	background-attachment: fixed;
-	width: 100%;
-	height: 50vh;
 }
 
 .review {
@@ -65,8 +65,8 @@
 		padding-top: 100px;
 	}
 	.banner {
-		height: 40vh;
-		background-position: center -200px;
+		height: 50vh;
+		background-position: center 90%;
 	}
 	.review {
 		grid-column: 1 / span 2;
@@ -84,10 +84,6 @@
 		max-width: 100% !important;
 		padding-left: 15px;
 		padding-right: 15px;
-	}
-	.banner {
-		height: 40vh;
-		background-position: center -100px;
 	}
 }
 @media screen and (max-width: 450px) {
