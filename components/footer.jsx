@@ -6,7 +6,6 @@ export default function Footer() {
 	return (
 		<footer className={style.footer}>
 			<ul>
-				<li key='first-item'>Navigate:</li>
 				{pages.map((page, i) => (
 					<li key={`${i}${page}`}>
 						<Link href={page.route}>
@@ -16,7 +15,7 @@ export default function Footer() {
 				))}
 			</ul>
 			<p>
-				Our Address:
+				OUR ADDRESS:
 				<br />
 				Green Lawns
 				<br />
@@ -27,18 +26,18 @@ export default function Footer() {
 				NP25 4BX
 			</p>
 			<p>
-				Contact us: <br />
-				Telephone:{' '}
+				CONTACT US: <br />
+				TELEPHONE:{' '}
 				<a href='tel:01600740111'>
 					<span>01600 740111</span>
 				</a>{' '}
 				<br />
-				Mobile:{' '}
+				MOBILE:{' '}
 				<a href='tel:07815534990'>
 					<span>07815 534990</span>
 				</a>
 				<br />
-				Email:{' '}
+				EMAIL:{' '}
 				<a href='mailto:greenlawnskennels@icloud.com'>
 					<span className={style.email}>greenlawnskennels@icloud.com</span>
 				</a>
