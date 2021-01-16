@@ -173,16 +173,7 @@
 		width: 20px;
 	}
 }
-/* .callToAction a {
-	font-size: 55px;
-	padding: 30px;
-	margin: 30px;
-	border-radius: 20px;
-}
-.callToAction a:hover {
-	font-size: 60px;
-	padding: 35px;
-} */
+
 @media screen and (min-width: 2500px) {
 	.titles h1 {
 		font-size: 120px;
@@ -199,6 +190,11 @@
 	.callToAction a:hover {
 		font-size: 85px;
 		padding: 50px;
+	}
+	.callToAction svg {
+		margin-left: 22px;
+		height: 80px;
+		width: 70px;
 	}
 }
 @media screen and (min-width: 3700px) {
@@ -217,5 +213,10 @@
 	.callToAction a:hover {
 		font-size: 120px;
 		padding: 70px;
+	}
+	.callToAction svg {
+		margin-left: 30px;
+		height: 120px;
+		width: 100px;
 	}
 }
