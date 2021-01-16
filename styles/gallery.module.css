@@ -75,6 +75,7 @@
 	background-color: #d7fbe8;
 	opacity: 0.9;
 	transition: 0.15s;
+	z-index: 12000;
 }
 .modal svg:hover {
 	transform: scale(1.1);
