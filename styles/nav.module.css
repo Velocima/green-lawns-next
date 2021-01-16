@@ -84,7 +84,7 @@
 }
 @media screen and (max-width: 1050px) {
 	.nav {
-		background-color: none;
+		background-color: #d7fbe800;
 		opacity: 1;
 	}
 	.navButton {
