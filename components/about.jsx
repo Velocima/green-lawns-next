@@ -63,15 +63,19 @@ export default function About() {
 					<img src='/images/about/ted.jpg' alt='' style={imageThreeStyle} />
 				</div>
 				<p ref={familyTextRef} style={{ animationPlayState: familyTextPlayState }}>
-					We are a highly reputable and established boarding kennels offering first class
-					care for our guests. We are situated just outside Monmouth within easy reach of
-					the M4 and A449. Our Kennels are fully licensed by Monmouthshire County Council
-					and Insured by Pet Plan UK Ltd. We pride ourselves in treating each guest as an
-					individual and we care with our kindness and attention to detail. We exercise
-					our doggies three times a day in our beautiful enclosed paddocks where they can
-					socialise with others or, if you prefer can be exercised individually. We
-					specialise in anxious or nervous dogs, giving them the extra time to either make
-					friends with others or to be relaxed just with us.
+					As a highly reputable and established boarding kennels we offer first class care
+					for dogs of all shapes and sizes. Green Lawns Boarding Kennels is situated just
+					outside Monmouth within easy reach of the M4 and A449. In keeping with the
+					highest practice standards, our business is fully licensed by Monmouthshire
+					County Council and Insured by Pet Plan UK Ltd.
+					<br />
+					<br />
+					We pride ourselves in caring for each guest as an individual, paying detailed
+					attention to their specific needs. Specialising in caring for anxious or nervous
+					dogs, we understand and provide the necessary extra time they need to become
+					comfortable with us and to make friends at their own pace. All our guests get
+					the chance to play in our lovely paddocks three times a day where they can
+					exercise and socialise with other dogs or individually if you’d prefer.
 				</p>
 			</section>
 			<section>
@@ -85,10 +89,12 @@ export default function About() {
 							ref={tileTextOneRef}
 							style={{ animationPlayState: tileTextOnePlayState }}
 						>
-							Our Kennels are arranged in two blocks with ten kennels in each. They
-							are all heated and temperature checked twice daily. Every kennel has a
-							inside cosy house and an outside exercise covered area. All bedding and
-							beds are provided but we welcome you to bring yours should you wish.
+							Our Kennels are arranged in two blocks of ten kennels in each. They are
+							all heated and the temperature is checked twice daily. Each kennel
+							comprises a cosy little house and an external covered exercise area.
+							Although comfortable beds and bedding are provided, please feel welcome
+							to bring your dog’s own cushion or blanket to help them feel more at
+							home.
 						</p>
 					</div>
 					<img
@@ -112,9 +118,10 @@ export default function About() {
 							ref={tileTextTwoRef}
 							style={{ animationPlayState: tileTextTwoPlayState }}
 						>
-							Our top of the range foods include both wet and dry. If your dog
-							requires a specific diet, we ask that you provide this for them. Bowls
-							are supplied and we offer fresh water in their kennel at all times.
+							The top of the range balanced nutrition we offer includes both wet and
+							dry varieties. If your dog requires a specific diet, we ask that you
+							provide this for them. Bowls are supplied and we ensure fresh water is
+							available at all times.
 						</p>
 					</div>
 					<div
@@ -126,10 +133,10 @@ export default function About() {
 							ref={tileTextThreeRef}
 							style={{ animationPlayState: tileTextThreePlayState }}
 						>
-							If your doggie requires medication during their stay, we can happily
-							administer this. We simply require that you write all the details on the
-							medication boxes and we will require you to fill out a quick medical
-							form for them.
+							If your dog requires medication during their stay, we are happy to
+							administer this. We ask that any specific detailed instructions should
+							be written on the medication boxes. You will also have to fill out a
+							brief medical form.
 						</p>
 					</div>
 					<img

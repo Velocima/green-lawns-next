@@ -39,10 +39,12 @@ export default function Services() {
 						/>
 					</div>
 					<p>
-						We offer single nights or longer stays as well as day boarding for our
-						guests. Every dog will have exercise three times per day in our lovely
-						paddocks with Meals all included and extra treats in between times! Please
-						see our opening times for day nursery.
+						At Green Lawns Boarding Kennels we offer day boarding, single nights or
+						longer stays to suit your needs.
+						<br />
+						<br />
+						All meals and treats are included and every dog will get to exercise three
+						times per day in our lovely paddock.
 					</p>
 				</div>
 				<div className={style.info}>
@@ -195,11 +197,12 @@ export default function Services() {
 								<p>
 									All guests must be up to date with their vaccinations, including
 									the kennel cough vaccine. This vaccine should be done annually
-									with the main vaccines, however, please make sure it’s completed
-									at least two weeks before entering our Kennels. The certificates
-									should accompany the doggies on every visit. Flea and worm
-									treatments should be applied regularly however, please take
-									advice from your vet to how and when these should be taken.
+									with the main vaccines. However, please make sure it is
+									completed at least two weeks before entering our kennels.
+									Relevant certificates should accompany your dog(s) on every
+									visit. Flea and worm treatments should be applied regularly.
+									Please take advice from your vet as to how and when these should
+									be administered.
 								</p>
 							</li>
 							<li>
@@ -217,8 +220,8 @@ export default function Services() {
 									<path d='M17.34 14.86c-.87-1.02-1.6-1.89-2.48-2.91-.46-.54-1.05-1.08-1.75-1.32-.11-.04-.22-.07-.33-.09-.25-.04-.52-.04-.78-.04s-.53 0-.79.05c-.11.02-.22.05-.33.09-.7.24-1.28.78-1.75 1.32-.87 1.02-1.6 1.89-2.48 2.91-1.31 1.31-2.92 2.76-2.62 4.79.29 1.02 1.02 2.03 2.33 2.32.73.15 3.06-.44 5.54-.44h.18c2.48 0 4.81.58 5.54.44 1.31-.29 2.04-1.31 2.33-2.32.31-2.04-1.3-3.49-2.61-4.8z' />
 								</svg>
 								<p>
-									A 20% non refundable or transferable deposit will be applied
-									when bookings are taken. The rest is to be paid in full upon
+									A 20% non-refundable or transferable deposit will be collected
+									at the time of booking. The rest will be due in full upon
 									collection.
 								</p>
 							</li>
@@ -253,8 +256,8 @@ export default function Services() {
 									<path d='M17.34 14.86c-.87-1.02-1.6-1.89-2.48-2.91-.46-.54-1.05-1.08-1.75-1.32-.11-.04-.22-.07-.33-.09-.25-.04-.52-.04-.78-.04s-.53 0-.79.05c-.11.02-.22.05-.33.09-.7.24-1.28.78-1.75 1.32-.87 1.02-1.6 1.89-2.48 2.91-1.31 1.31-2.92 2.76-2.62 4.79.29 1.02 1.02 2.03 2.33 2.32.73.15 3.06-.44 5.54-.44h.18c2.48 0 4.81.58 5.54.44 1.31-.29 2.04-1.31 2.33-2.32.31-2.04-1.3-3.49-2.61-4.8z' />
 								</svg>
 								<p>
-									Another days charge will be added if collection is in the
-									afternoon.
+									Another day’s charge will be added if collection takes place in
+									the afternoon.
 								</p>
 							</li>
 						</ul>
