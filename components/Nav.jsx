@@ -7,14 +7,14 @@ import { useRouter } from 'next/router';
 
 export default function Nav(props) {
 	const [width] = useWindowSize();
-	const [showNav, setShowNav] = useState(width < 1050 ? false : true);
+	const [showNav, setShowNav] = useState(width <= 1050 ? false : true);
 	const handleNavButtonClick = () => {
-		if (width < 1050) {
+		if (width <= 1050) {
 			setShowNav((prevState) => !prevState);
 		}
 	};
 	useEffect(() => {
-		setShowNav(width < 1050 ? false : true);
+		setShowNav(width <= 1050 ? false : true);
 	}, [width]);
 
 	const topLineStyle = {
