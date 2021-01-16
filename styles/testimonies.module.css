@@ -1,6 +1,6 @@
 .banner {
 	background-image: url('/images/testimonies/banner.jpg');
-	background-position: 40% top;
+	background-position: center top;
 	background-size: cover;
 	background-attachment: fixed;
 	width: 100%;
@@ -66,7 +66,7 @@
 	}
 	.banner {
 		height: 50vh;
-		background-position: center 90%;
+		background-position: center top;
 	}
 	.review {
 		grid-column: 1 / span 2;
