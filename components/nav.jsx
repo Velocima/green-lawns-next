@@ -70,7 +70,7 @@ export default function Nav(props) {
 						}}
 					>
 						<Link href={page.route} onClick={handleNavButtonClick}>
-							<a>{page.navText}</a>
+							<a onClick={handleNavButtonClick}>{page.navText}</a>
 						</Link>
 					</li>
 				))}
