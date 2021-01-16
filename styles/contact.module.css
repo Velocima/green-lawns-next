@@ -93,10 +93,9 @@
 	align-items: flex-start;
 	justify-content: space-evenly;
 	flex-wrap: wrap;
-	min-height: 40vh;
 	width: 100%;
 	margin-top: -10px;
-	padding-top: 10px;
+	padding: 30px 20px 20px;
 	background-image: url('/images/dark-wallpaper.png');
 	background-repeat: repeat;
 	background-size: cover;
@@ -209,6 +208,9 @@
 		width: 20px;
 	}
 
+	.tables {
+		padding: 20px 5px 5px;
+	}
 	.table,
 	.address {
 		width: 95%;
