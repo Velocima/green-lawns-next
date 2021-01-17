@@ -20,7 +20,7 @@ export const reviews = [
 		author: 'Jayne P',
 	},
 	{
-		review: `We have been bringing our Cavalier King Charles spaniel to stay at Green Lawns Kennels since we moved to the area six years agp.I can highly recommend the care that Lola has received on her visits, she happily walks in without a backward glance and enjoys her holiday as much as we enjoy ours! She is now quite elderly and a little frail but we are completely confident leaving her at the Kennels as we know that Julie will take the utmost care of her.We highly recommend Green Lawns as an excellent home from home.`,
+		review: `We have been bringing our Cavalier King Charles spaniel to stay at Green Lawns Kennels since we moved to the area six years ago.I can highly recommend the care that Lola has received on her visits, she happily walks in without a backward glance and enjoys her holiday as much as we enjoy ours! She is now quite elderly and a little frail but we are completely confident leaving her at the Kennels as we know that Julie will take the utmost care of her.We highly recommend Green Lawns as an excellent home from home.`,
 		author: 'Debbie Tyrrell',
 	},
 	{
