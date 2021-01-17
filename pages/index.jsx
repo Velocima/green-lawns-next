@@ -9,7 +9,7 @@ export default function Home() {
 	return (
 		<>
 			<Head>
-				<title>Green Lawns Boarding Kennels</title>
+				<title>Green Lawns Boarding Kennels | Local Dog Boarding & Daycare</title>
 				<link rel='icon' href='/images/favicon.png' />
 			</Head>
 			<Nav />

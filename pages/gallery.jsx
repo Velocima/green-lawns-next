@@ -37,7 +37,7 @@ export default function Gallery(props) {
 	return (
 		<>
 			<Head>
-				<title>Gallery | Green Lawns Boarding Kennels</title>
+				<title>Cute Photos Of Our Favourite Doggy Guests</title>
 				<link rel='icon' href='/images/favicon.png' />
 			</Head>
 			<Nav />

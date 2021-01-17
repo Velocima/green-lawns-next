@@ -11,7 +11,7 @@ export default function Testimonials() {
 	return (
 		<>
 			<Head>
-				<title>Testimonies | Green Lawns Boarding Kennels</title>
+				<title>What Our Customers Have to Say | Green Lawns Reviews</title>
 				<link rel='icon' href='/images/favicon.png' />
 			</Head>
 			<Nav />

@@ -21,7 +21,7 @@ export default function Contact() {
 	return (
 		<>
 			<Head>
-				<title>Contact | Green Lawns Boarding Kennels</title>
+				<title>Book With Green Lawns | Contact Info & Opening Hours</title>
 				<link rel='icon' href='/images/favicon.png' />
 			</Head>
 			<Nav />
