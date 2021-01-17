@@ -10,6 +10,6 @@ export const pages = [
 		),
 	},
 	{ route: '/gallery', navText: 'GALLERY' },
-	{ route: '/testimonies', navText: 'TESTIMONIES' },
+	{ route: '/testimonials', navText: 'TESTIMONIALS' },
 	{ route: '/contact', navText: 'CONTACT' },
 ];
