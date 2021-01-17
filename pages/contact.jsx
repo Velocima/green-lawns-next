@@ -23,6 +23,10 @@ export default function Contact() {
 			<Head>
 				<title>Book With Green Lawns | Contact Info & Opening Hours</title>
 				<link rel='icon' href='/images/favicon.png' />
+				<meta
+					name='description'
+					content='Mobile, landline, email and address information. How to get in touch with us and book your dog for a stay. '
+				/>
 			</Head>
 			<Nav />
 			<main className={style.contact}>

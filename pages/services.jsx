@@ -28,6 +28,10 @@ export default function Services() {
 			<Head>
 				<title>Our Services, Pricing and Opening Hours | Green Lawns</title>
 				<link rel='icon' href='/images/favicon.png' />
+				<meta
+					name='description'
+					content='Important information to help you book with us. Find our prices, opening hours and everything you need to know ready for your dog’s stay with us.'
+				/>
 			</Head>
 			<Nav />
 			<main className={style.main}>

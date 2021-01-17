@@ -13,6 +13,10 @@ export default function Testimonials() {
 			<Head>
 				<title>What Our Customers Have to Say | Green Lawns Reviews</title>
 				<link rel='icon' href='/images/favicon.png' />
+				<meta
+					name='description'
+					content='Read reviews from some of our long standing clients. Discover why the Monmouth dog community loves Green Lawns Boarding Kennels!'
+				/>
 			</Head>
 			<Nav />
 			<div className={style.banner}></div>

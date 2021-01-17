@@ -11,6 +11,10 @@ export default function Home() {
 			<Head>
 				<title>Green Lawns Boarding Kennels | Local Dog Boarding & Daycare</title>
 				<link rel='icon' href='/images/favicon.png' />
+				<meta
+					name='description'
+					content='Discover Green Lawns Boarding Kennels - your dog’s new home away from home. Based in Monmouthshire, we are a long established company built on our love of dogs and a passion for care. Dog kennels specialist overnight boarding and daycare.'
+				/>
 			</Head>
 			<Nav />
 			<main className={style.main}>

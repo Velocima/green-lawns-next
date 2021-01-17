@@ -39,6 +39,10 @@ export default function Gallery(props) {
 			<Head>
 				<title>Cute Photos Of Our Favourite Doggy Guests</title>
 				<link rel='icon' href='/images/favicon.png' />
+				<meta
+					name='description'
+					content='View our pictures of cute and adorable dogs! A photo gallery of dogs we’ve had to stay with us.'
+				/>
 			</Head>
 			<Nav />
 			<section className={style.gallery}>
