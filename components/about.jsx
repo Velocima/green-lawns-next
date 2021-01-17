@@ -90,11 +90,10 @@ export default function About() {
 							style={{ animationPlayState: tileTextOnePlayState }}
 						>
 							Our Kennels are arranged in two blocks of ten kennels in each. They are
-							all heated and the temperature is checked twice daily. Each kennel
-							comprises a cosy little house and an external covered exercise area.
-							Although comfortable beds and bedding are provided, please feel welcome
-							to bring your dog’s own cushion or blanket to help them feel more at
-							home.
+							all heated and temperature checked twice daily. Each kennel comprises a
+							cosy inside area and an external covered exercise area. Although
+							comfortable beds and bedding are provided, feel free to bring your dog’s
+							own bedding to help them feel more at home.
 						</p>
 					</div>
 					<img
