@@ -37,7 +37,7 @@ export default function Nav(props) {
 				? '#9df3c4'
 				: pathname === '/gallery'
 				? '#62d2a2'
-				: pathname === '/testimonies'
+				: pathname === '/testimonials'
 				? '#1fab89'
 				: '#13614d',
 	};
