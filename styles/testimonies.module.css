@@ -5,6 +5,7 @@
 	background-attachment: fixed;
 	width: 100%;
 	height: 65vh;
+	animation: fadeIn 0.5s ease-out backwards;
 }
 .reviews {
 	display: grid;
