@@ -47,8 +47,8 @@ export default function Services() {
 						longer stays to suit your needs.
 						<br />
 						<br />
-						All meals and treats are included and every dog will get to exercise three
-						times per day in our lovely paddock.
+						All meals and treats are included and every dog gets to exercise three times
+						per day in the safety of our paddocks.
 					</p>
 				</div>
 				<div className={style.info}>
@@ -166,7 +166,7 @@ export default function Services() {
 							<table>
 								<tbody>
 									<tr>
-										<th colSpan='2'>Opening Hours</th>
+										<th colSpan='2'>OPENING HOURS</th>
 									</tr>
 									<tr>
 										<td>Monday - Friday</td>
@@ -204,9 +204,9 @@ export default function Services() {
 									with the main vaccines. However, please make sure it is
 									completed at least two weeks before entering our kennels.
 									Relevant certificates should accompany your dog(s) on every
-									visit. Flea and worm treatments should be applied regularly.
-									Please take advice from your vet as to how and when these should
-									be administered.
+									visit. Flea and worm treatments should be administered
+									regularly. Please take advice from your vet as to how and when
+									these should be administered.
 								</p>
 							</li>
 							<li>

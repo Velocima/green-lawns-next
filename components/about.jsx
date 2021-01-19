@@ -75,7 +75,7 @@ export default function About() {
 					dogs, we understand and provide the necessary time they need to become
 					comfortable with us and to make friends at their own pace. All our guests get
 					the chance to play in our lovely paddocks three times a day where they can
-					exercise and socialise with other dogs or individually if you’d prefer.
+					exercise and socialise with other dogs, or individually if you would prefer.
 				</p>
 			</section>
 			<section>
@@ -133,7 +133,7 @@ export default function About() {
 							style={{ animationPlayState: tileTextThreePlayState }}
 						>
 							If your dog requires medication during their stay, we are happy to
-							administer this. We ask that any specific detailed instructions should
+							administer this. We ask that any specific, detailed instructions should
 							be written on the medication boxes. You will also have to fill out a
 							brief medical form.
 						</p>
