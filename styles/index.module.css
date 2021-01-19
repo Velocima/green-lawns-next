@@ -123,6 +123,10 @@
 		font-size: 40px;
 		padding: 20px;
 	}
+	.callToAction a:hover {
+		font-size: 45px;
+		padding: 25px;
+	}
 	.callToAction svg {
 		height: 45px;
 		width: 37px;
@@ -150,6 +154,9 @@
 		font-size: 28px;
 		margin: 20px 0;
 	}
+	.callToAction a:hover {
+		font-size: 32px;
+	}
 	.callToAction svg {
 		height: 33px;
 		width: 28px;
@@ -172,7 +179,9 @@
 	}
 	.callToAction a {
 		font-size: 22px;
-		margin: 20px 0;
+	}
+	.callToAction a:hover {
+		font-size: 26px;
 	}
 	.callToAction svg {
 		height: 24px;
