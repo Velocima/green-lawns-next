@@ -15,7 +15,6 @@ export default function Nav(props) {
 	};
 	useEffect(() => {
 		setShowNav(width <= 1050 ? false : true);
-		console.log('width changed', width);
 	}, [width]);
 
 	const topLineStyle = {
