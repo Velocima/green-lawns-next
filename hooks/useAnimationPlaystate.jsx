@@ -17,7 +17,7 @@ export default function useAnimationPlaystate(elementRef) {
 		};
 		onScroll();
 
-		window.addEventListener('scroll', onScroll);
+		window.addEventListener('scroll', onScroll, { passive: true });
 		return () => window.removeEventListener('scroll', onScroll);
 	}, [height]);
 	return playState;
