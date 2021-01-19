@@ -180,9 +180,16 @@
 	}
 }
 /* handheld width queries */
-@media screen and (max-width: 1050px) {
+
+@media screen and (max-width: 1370px) {
 	.banner {
 		background-attachment: local;
+		background-position: bottom;
+	}
+}
+
+@media screen and (max-width: 1050px) {
+	.banner {
 		background-position: bottom;
 		height: 50vh;
 	}
@@ -410,12 +417,12 @@
 
 /* Paralax height breakpoints for the banner */
 
-@media screen and (max-height: 900px) and (min-width: 1050px) {
+@media screen and (max-height: 900px) and (min-width: 1370px) {
 	.banner {
 		background-position: center -150px;
 	}
 }
-@media screen and (max-height: 700px) and (min-width: 1050px) {
+@media screen and (max-height: 700px) and (min-width: 1370px) {
 	.banner {
 		background-position: center -110px;
 	}

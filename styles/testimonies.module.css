@@ -61,14 +61,18 @@
 	padding-left: 50px;
 }
 
+@media screen and (max-width: 1370px) {
+	.banner {
+		background-position: center top;
+		background-attachment: local;
+	}
+}
 @media screen and (max-width: 1050px) {
 	.reviews {
 		padding-top: 100px;
 	}
 	.banner {
 		height: 50vh;
-		background-position: center top;
-		background-attachment: local;
 	}
 	.review {
 		grid-column: 1 / span 2;

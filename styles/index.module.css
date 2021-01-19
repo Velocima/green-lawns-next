@@ -98,11 +98,16 @@
 		opacity: 1;
 	}
 }
-
+@media screen and (max-width: 1370px) {
+	.banner {
+		background-attachment: local;
+		background-position: center 20%;
+	}
+}
 @media screen and (max-width: 1050px) {
 	.banner {
 		min-height: 350px;
-		background-attachment: local;
+		background-position: center;
 	}
 	.titles {
 		margin: 0 30px;
