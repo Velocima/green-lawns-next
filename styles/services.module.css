@@ -26,6 +26,7 @@
 	border-radius: 50%;
 	object-fit: cover;
 	object-position: 50% 30%;
+	backface-visibility: hidden;
 	box-shadow: 4px 6px 8px #181818;
 	transform: translateX(calc(25vw - 175px));
 	animation: fadeIn 0.5s ease-out backwards;
