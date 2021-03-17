@@ -28,6 +28,10 @@
 	transform: translateX(5px);
 }
 
+.footer p:last-child a {
+	text-decoration: underline;
+}
+
 @media screen and (max-width: 800px) {
 	.footer {
 		flex-direction: column;

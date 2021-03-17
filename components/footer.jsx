@@ -44,7 +44,7 @@ export default function Footer() {
 			</p>
 			<p>
 				Website created by:<br></br>
-				Max Hartley
+				<a href='mailto:hartley.max@outlook.com'>Max Hartley</a>
 			</p>
 		</footer>
 	);
