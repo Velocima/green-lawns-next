@@ -43,20 +43,17 @@ export default function Services() {
 						/>
 					</div>
 					<p>
-						At Green Lawns Boarding Kennels we offer day boarding, single nights or
-						longer stays to suit your needs.
+						At Green Lawns Boarding Kennels we offer day boarding, single nights or longer stays to
+						suit your needs.
 						<br />
 						<br />
-						All meals and treats are included and every dog gets to exercise three times
-						per day in the safety of our paddocks.
+						All meals and treats are included and every dog gets to exercise three times per day in
+						the safety of our paddocks.
 					</p>
 				</div>
 				<div className={style.info}>
 					<section className={style.prices}>
-						<h1
-							ref={pricesTitleRef}
-							style={{ animationPlayState: pricesTitlePlaystate }}
-						>
+						<h1 ref={pricesTitleRef} style={{ animationPlayState: pricesTitlePlaystate }}>
 							PRICES
 						</h1>
 						<div
@@ -84,38 +81,38 @@ export default function Services() {
 									</tr>
 									<tr>
 										<td>1 Dog</td>
-										<td>£14 per night</td>
+										<td>£16.50 per night</td>
 									</tr>
 									<tr>
 										<td>2 Dogs (small)</td>
-										<td>£20 per night</td>
+										<td>£22.50 per night</td>
 									</tr>
 									<tr>
 										<td>2 Dogs (medium/large)</td>
-										<td>£22 per night</td>
+										<td>£24.50 per night</td>
 									</tr>
 									<tr>
 										<td>3 Dogs (small)</td>
-										<td>£26 per night</td>
+										<td>£28.50 per night</td>
 									</tr>
 									<tr>
 										<td>3 Dogs (medium/large)</td>
-										<td>£28 per night</td>
+										<td>£30.50 per night</td>
 									</tr>
 									<tr>
 										<th colSpan='2'>FOR ONE NIGHT</th>
 									</tr>
 									<tr>
 										<td>1 Dog</td>
-										<td>£20</td>
+										<td>£22.50</td>
 									</tr>
 									<tr>
 										<td>2 Dogs</td>
-										<td>£25</td>
+										<td>£27.50</td>
 									</tr>
 									<tr>
 										<td>3 Dogs </td>
-										<td>£30</td>
+										<td>£32.50</td>
 									</tr>
 								</tbody>
 							</table>
@@ -153,12 +150,7 @@ export default function Services() {
 								ref={infoSVGRef}
 								style={{ animationPlayState: infoSVGPlaystate }}
 							>
-								<svg
-									xmlns='http://www.w3.org/2000/svg'
-									height='24'
-									viewBox='0 0 24 24'
-									width='24'
-								>
+								<svg xmlns='http://www.w3.org/2000/svg' height='24' viewBox='0 0 24 24' width='24'>
 									<path d='M0 0h24v24H0z' fill='none' />
 									<path d='M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z' />
 								</svg>
@@ -185,12 +177,7 @@ export default function Services() {
 						</div>
 						<ul ref={infoListRef} style={{ animationPlayState: infoListPlaystate }}>
 							<li>
-								<svg
-									xmlns='http://www.w3.org/2000/svg'
-									height='24'
-									viewBox='0 0 24 24'
-									width='24'
-								>
+								<svg xmlns='http://www.w3.org/2000/svg' height='24' viewBox='0 0 24 24' width='24'>
 									<path d='M0 0h24v24H0z' fill='none' />
 									<circle cx='4.5' cy='9.5' r='2.5' />
 									<circle cx='9' cy='5.5' r='2.5' />
@@ -199,23 +186,16 @@ export default function Services() {
 									<path d='M17.34 14.86c-.87-1.02-1.6-1.89-2.48-2.91-.46-.54-1.05-1.08-1.75-1.32-.11-.04-.22-.07-.33-.09-.25-.04-.52-.04-.78-.04s-.53 0-.79.05c-.11.02-.22.05-.33.09-.7.24-1.28.78-1.75 1.32-.87 1.02-1.6 1.89-2.48 2.91-1.31 1.31-2.92 2.76-2.62 4.79.29 1.02 1.02 2.03 2.33 2.32.73.15 3.06-.44 5.54-.44h.18c2.48 0 4.81.58 5.54.44 1.31-.29 2.04-1.31 2.33-2.32.31-2.04-1.3-3.49-2.61-4.8z' />
 								</svg>
 								<p>
-									All guests must be up to date with their vaccinations, including
-									the kennel cough vaccine. This vaccine should be done annually
-									with the main vaccines. However, please make sure it is
-									completed at least two weeks before entering our kennels.
-									Relevant certificates should accompany your dog(s) on every
-									visit. Flea and worm treatments should be administered
-									regularly. Please take advice from your vet as to how and when
-									these should be administered.
+									All guests must be up to date with their vaccinations, including the kennel cough
+									vaccine. This vaccine should be done annually with the main vaccines. However,
+									please make sure it is completed at least two weeks before entering our kennels.
+									Relevant certificates should accompany your dog(s) on every visit. Flea and worm
+									treatments should be administered regularly. Please take advice from your vet as
+									to how and when these should be administered.
 								</p>
 							</li>
 							<li>
-								<svg
-									xmlns='http://www.w3.org/2000/svg'
-									height='24'
-									viewBox='0 0 24 24'
-									width='24'
-								>
+								<svg xmlns='http://www.w3.org/2000/svg' height='24' viewBox='0 0 24 24' width='24'>
 									<path d='M0 0h24v24H0z' fill='none' />
 									<circle cx='4.5' cy='9.5' r='2.5' />
 									<circle cx='9' cy='5.5' r='2.5' />
@@ -224,18 +204,12 @@ export default function Services() {
 									<path d='M17.34 14.86c-.87-1.02-1.6-1.89-2.48-2.91-.46-.54-1.05-1.08-1.75-1.32-.11-.04-.22-.07-.33-.09-.25-.04-.52-.04-.78-.04s-.53 0-.79.05c-.11.02-.22.05-.33.09-.7.24-1.28.78-1.75 1.32-.87 1.02-1.6 1.89-2.48 2.91-1.31 1.31-2.92 2.76-2.62 4.79.29 1.02 1.02 2.03 2.33 2.32.73.15 3.06-.44 5.54-.44h.18c2.48 0 4.81.58 5.54.44 1.31-.29 2.04-1.31 2.33-2.32.31-2.04-1.3-3.49-2.61-4.8z' />
 								</svg>
 								<p>
-									A 20% non-refundable or transferable deposit will be collected
-									at the time of booking. The rest will be due in full upon
-									collection.
+									A 20% non-refundable or transferable deposit will be collected at the time of
+									booking. The rest will be due in full upon collection.
 								</p>
 							</li>
 							<li>
-								<svg
-									xmlns='http://www.w3.org/2000/svg'
-									height='24'
-									viewBox='0 0 24 24'
-									width='24'
-								>
+								<svg xmlns='http://www.w3.org/2000/svg' height='24' viewBox='0 0 24 24' width='24'>
 									<path d='M0 0h24v24H0z' fill='none' />
 									<circle cx='4.5' cy='9.5' r='2.5' />
 									<circle cx='9' cy='5.5' r='2.5' />
@@ -246,12 +220,7 @@ export default function Services() {
 								<p>We only accept payments via BACS, cash or cheque.</p>
 							</li>
 							<li>
-								<svg
-									xmlns='http://www.w3.org/2000/svg'
-									height='24'
-									viewBox='0 0 24 24'
-									width='24'
-								>
+								<svg xmlns='http://www.w3.org/2000/svg' height='24' viewBox='0 0 24 24' width='24'>
 									<path d='M0 0h24v24H0z' fill='none' />
 									<circle cx='4.5' cy='9.5' r='2.5' />
 									<circle cx='9' cy='5.5' r='2.5' />
@@ -260,8 +229,7 @@ export default function Services() {
 									<path d='M17.34 14.86c-.87-1.02-1.6-1.89-2.48-2.91-.46-.54-1.05-1.08-1.75-1.32-.11-.04-.22-.07-.33-.09-.25-.04-.52-.04-.78-.04s-.53 0-.79.05c-.11.02-.22.05-.33.09-.7.24-1.28.78-1.75 1.32-.87 1.02-1.6 1.89-2.48 2.91-1.31 1.31-2.92 2.76-2.62 4.79.29 1.02 1.02 2.03 2.33 2.32.73.15 3.06-.44 5.54-.44h.18c2.48 0 4.81.58 5.54.44 1.31-.29 2.04-1.31 2.33-2.32.31-2.04-1.3-3.49-2.61-4.8z' />
 								</svg>
 								<p>
-									Another day’s charge will be added if collection takes place in
-									the afternoon.
+									Another day’s charge will be added if collection takes place in the afternoon.
 								</p>
 							</li>
 						</ul>
