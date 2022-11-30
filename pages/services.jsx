@@ -81,38 +81,38 @@ export default function Services() {
 									</tr>
 									<tr>
 										<td>1 Dog</td>
-										<td>£16.50 per night</td>
+										<td>£19.50 per night</td>
 									</tr>
 									<tr>
 										<td>2 Dogs (small)</td>
-										<td>£22.50 per night</td>
+										<td>£25.50 per night</td>
 									</tr>
 									<tr>
 										<td>2 Dogs (medium/large)</td>
-										<td>£24.50 per night</td>
+										<td>£27.50 per night</td>
 									</tr>
 									<tr>
 										<td>3 Dogs (small)</td>
-										<td>£28.50 per night</td>
+										<td>£31.50 per night</td>
 									</tr>
 									<tr>
 										<td>3 Dogs (medium/large)</td>
-										<td>£30.50 per night</td>
+										<td>£33.50 per night</td>
 									</tr>
 									<tr>
 										<th colSpan='2'>FOR ONE NIGHT</th>
 									</tr>
 									<tr>
 										<td>1 Dog</td>
-										<td>£22.50</td>
+										<td>£25.50</td>
 									</tr>
 									<tr>
 										<td>2 Dogs</td>
-										<td>£27.50</td>
+										<td>£30.50</td>
 									</tr>
 									<tr>
 										<td>3 Dogs </td>
-										<td>£32.50</td>
+										<td>£35.50</td>
 									</tr>
 								</tbody>
 							</table>
@@ -126,9 +126,9 @@ export default function Services() {
 							<p>
 								Monday-Friday, 8:30a.m - 5:30pm
 								<br />
-								1 x dog - £14 per day
+								1 x dog - £16 per day
 								<br />
-								2 x dogs - £20 per day
+								2 x dogs - £22 per day
 								<br />
 								Price includes three walks and mid day meal if required.
 							</p>
