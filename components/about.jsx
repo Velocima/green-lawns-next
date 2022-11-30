@@ -63,19 +63,18 @@ export default function About() {
 					<img src='/images/about/ted.jpg' alt='' style={imageThreeStyle} />
 				</div>
 				<p ref={familyTextRef} style={{ animationPlayState: familyTextPlayState }}>
-					As a highly reputable and established boarding kennels we offer first class care
-					for dogs of all shapes and sizes. Green Lawns Boarding Kennels is situated just
-					outside Monmouth within easy reach of the M4 and A449. In keeping with the
-					highest practice standards, our business is fully licensed by Monmouthshire
-					County Council and Insured by Pet Plan UK Ltd.
+					As a highly reputable and established boarding kennels we offer first class care for dogs
+					of all shapes and sizes. Green Lawns Boarding Kennels is situated just outside Monmouth
+					within easy reach of the M4 and A449. In keeping with the highest practice standards, our
+					business is fully licensed by Monmouthshire County Council and Insured by Pet Plan UK Ltd.
 					<br />
 					<br />
-					We pride ourselves in caring for each guest as an individual, paying detailed
-					attention to their specific needs. Specialising in caring for anxious or nervous
-					dogs, we understand and provide the necessary time they need to become
-					comfortable with us and to make friends at their own pace. All our guests get
-					the chance to play in our lovely paddocks three times a day where they can
-					exercise and socialise with other dogs, or individually if you would prefer.
+					We pride ourselves in caring for each guest as an individual, paying detailed attention to
+					their specific needs. Specialising in caring for anxious or nervous dogs, we understand
+					and provide the necessary time they need to become comfortable with us and to make friends
+					at their own pace. All our guests get the chance to play in our lovely paddocks three
+					times a day where they can exercise and socialise with other dogs, or individually if you
+					would prefer.
 				</p>
 			</section>
 			<section>
@@ -85,15 +84,12 @@ export default function About() {
 						ref={tileOneRef}
 						style={{ animationPlayState: tileOnePlayState }}
 					>
-						<p
-							ref={tileTextOneRef}
-							style={{ animationPlayState: tileTextOnePlayState }}
-						>
-							Our Kennels are arranged in two blocks of ten kennels in each. They are
-							all heated and temperature checked twice daily. Each kennel comprises a
-							cosy inside area and an external covered exercise area. Although
-							comfortable beds and bedding are provided, feel free to bring your dog’s
-							own bedding to help them feel more at home.
+						<p ref={tileTextOneRef} style={{ animationPlayState: tileTextOnePlayState }}>
+							Our Kennels are arranged in two blocks of ten kennels in each. All kennels feature
+							brand new state of the art central heating and are temperature checked twice daily.
+							Each kennel comprises a cosy inside area and an external covered exercise area.
+							Although comfortable beds and bedding are provided, feel free to bring your dog’s own
+							bedding to help them feel more at home.
 						</p>
 					</div>
 					<img
@@ -113,14 +109,10 @@ export default function About() {
 						ref={tileFourRef}
 						style={{ animationPlayState: tileFourPlayState }}
 					>
-						<p
-							ref={tileTextTwoRef}
-							style={{ animationPlayState: tileTextTwoPlayState }}
-						>
-							The top of the range balanced nutrition we offer includes both wet and
-							dry varieties. If your dog requires a specific diet, we ask that you
-							provide this for them. Bowls are supplied and we ensure fresh water is
-							available at all times.
+						<p ref={tileTextTwoRef} style={{ animationPlayState: tileTextTwoPlayState }}>
+							The top of the range balanced nutrition we offer includes both wet and dry varieties.
+							If your dog requires a specific diet, we ask that you provide this for them. Bowls are
+							supplied and we ensure fresh water is available at all times.
 						</p>
 					</div>
 					<div
@@ -128,14 +120,10 @@ export default function About() {
 						ref={tileFiveRef}
 						style={{ animationPlayState: tileFivePlayState }}
 					>
-						<p
-							ref={tileTextThreeRef}
-							style={{ animationPlayState: tileTextThreePlayState }}
-						>
-							If your dog requires medication during their stay, we are happy to
-							administer this. We ask that any specific, detailed instructions should
-							be written on the medication boxes. You will also have to fill out a
-							brief medical form.
+						<p ref={tileTextThreeRef} style={{ animationPlayState: tileTextThreePlayState }}>
+							If your dog requires medication during their stay, we are happy to administer this. We
+							ask that any specific, detailed instructions should be written on the medication
+							boxes. You will also have to fill out a brief medical form.
 						</p>
 					</div>
 					<img
