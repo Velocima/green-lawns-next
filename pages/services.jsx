@@ -77,45 +77,38 @@ export default function Services() {
 							<table>
 								<tbody>
 									<tr>
-										<th colSpan='2'>FOR MULTIPLE NIGHTS</th>
+										<th colSpan='2'>
+											OVERNIGHT STAYS
+											<sup>
+												<small>*</small>
+											</sup>
+										</th>
 									</tr>
 									<tr>
 										<td>1 Dog</td>
-										<td>£19.50 per night</td>
+										<td>£21 per night</td>
 									</tr>
 									<tr>
 										<td>2 Dogs (small)</td>
-										<td>£25.50 per night</td>
+										<td>£28.50 per night</td>
 									</tr>
 									<tr>
 										<td>2 Dogs (medium/large)</td>
-										<td>£27.50 per night</td>
+										<td>£30.50 per night</td>
 									</tr>
 									<tr>
 										<td>3 Dogs (small)</td>
-										<td>£31.50 per night</td>
+										<td>£34.50 per night</td>
 									</tr>
 									<tr>
 										<td>3 Dogs (medium/large)</td>
-										<td>£33.50 per night</td>
-									</tr>
-									<tr>
-										<th colSpan='2'>FOR ONE NIGHT</th>
-									</tr>
-									<tr>
-										<td>1 Dog</td>
-										<td>£25.50</td>
-									</tr>
-									<tr>
-										<td>2 Dogs</td>
-										<td>£30.50</td>
-									</tr>
-									<tr>
-										<td>3 Dogs </td>
-										<td>£35.50</td>
+										<td>£36.50 per night</td>
 									</tr>
 								</tbody>
 							</table>
+							<sub>
+								<em>*Two nights minimum charge</em>
+							</sub>
 						</div>
 						<div
 							className={style.doggyDaycare}
