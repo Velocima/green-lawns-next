@@ -108,6 +108,11 @@ export default function Services() {
 							</table>
 							<sub>
 								<em>*Two nights minimum charge</em>
+								<br />
+								<em>All prices are subject to VAT.</em>
+							</sub>
+							<sub>
+								<em></em>
 							</sub>
 						</div>
 						<div
@@ -125,6 +130,9 @@ export default function Services() {
 								<br />
 								Price includes three walks and mid day meal if required.
 							</p>
+							<sub className={style.doggyDaycareSub}>
+								<em>All prices are subject to VAT.</em>
+							</sub>
 						</div>
 					</section>
 					<section className={style.importantInformation}>

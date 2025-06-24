@@ -117,6 +117,12 @@
 	padding: 20px;
 }
 
+.doggyDaycareSub {
+	width: 100%;
+	text-align: left;
+	display: block;
+}
+
 .tableContainer td {
 	padding: 10px 5px;
 	font-size: 20px;
