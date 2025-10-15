@@ -11,7 +11,7 @@ export default function Services() {
 		pricesSVGRef = useRef(null),
 		infoSVGRef = useRef(null),
 		pricesTableRef = useRef(null),
-		doggyDaycareRef = useRef(null),
+		//doggyDaycareRef = useRef(null),
 		infoTableRef = useRef(null),
 		infoListRef = useRef(null);
 
@@ -20,7 +20,7 @@ export default function Services() {
 		pricesSVGPlaystate = useAnimationPlaystate(pricesSVGRef),
 		infoSVGPlaystate = useAnimationPlaystate(infoSVGRef),
 		pricesTablePlaystate = useAnimationPlaystate(pricesTableRef),
-		doggyDaycarePlaystate = useAnimationPlaystate(doggyDaycareRef),
+		//doggyDaycarePlaystate = useAnimationPlaystate(doggyDaycareRef),
 		infoTablePlaystate = useAnimationPlaystate(infoTableRef),
 		infoListPlaystate = useAnimationPlaystate(infoListRef);
 	return (
@@ -86,9 +86,13 @@ export default function Services() {
 									</tr>
 									<tr>
 										<td>1 Dog</td>
-										<td>£21 per night</td>
+										<td>£24 per night</td>
 									</tr>
 									<tr>
+										<td>25% discount for each additional dog</td>
+										<td></td>
+									</tr>
+									{/* <tr>
 										<td>2 Dogs (small)</td>
 										<td>£28.50 per night</td>
 									</tr>
@@ -103,19 +107,19 @@ export default function Services() {
 									<tr>
 										<td>3 Dogs (medium/large)</td>
 										<td>£36.50 per night</td>
-									</tr>
+									</tr> */}
 								</tbody>
 							</table>
 							<sub>
 								<em>*Two nights minimum charge</em>
 								<br />
-								<em>All prices are subject to VAT.</em>
+								<em>All prices include VAT.</em>
 							</sub>
 							<sub>
 								<em></em>
 							</sub>
 						</div>
-						<div
+						{/* <div
 							className={style.doggyDaycare}
 							ref={doggyDaycareRef}
 							style={{ animationPlayState: doggyDaycarePlaystate }}
@@ -133,7 +137,7 @@ export default function Services() {
 							<sub className={style.doggyDaycareSub}>
 								<em>All prices are subject to VAT.</em>
 							</sub>
-						</div>
+						</div> */}
 					</section>
 					<section className={style.importantInformation}>
 						<h1 ref={infoTitleRef} style={{ animationPlayState: infoTitlePlaystate }}>
