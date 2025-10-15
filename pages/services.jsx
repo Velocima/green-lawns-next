@@ -89,7 +89,7 @@ export default function Services() {
 										<td>£24 per night</td>
 									</tr>
 									<tr>
-										<td>25% discount for each additional dog</td>
+										<td>25% discount on each additional dog</td>
 										<td></td>
 									</tr>
 									{/* <tr>
