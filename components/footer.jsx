@@ -34,12 +34,12 @@ export default function Footer() {
 				<br />
 				MOBILE:{' '}
 				<a href='tel:07815534990'>
-					<span>07815 534990</span>
+					<span>07980 728975</span>
 				</a>
 				<br />
 				EMAIL:{' '}
-				<a href='mailto:greenlawnskennels@icloud.com'>
-					<span className={style.email}>greenlawnskennels@icloud.com</span>
+				<a href='mailto:greenlawnskennels@yahoo.com'>
+					<span className={style.email}>greenlawnskennels@yahoo.com</span>
 				</a>
 			</p>
 			<p>
